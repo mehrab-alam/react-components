@@ -2,13 +2,15 @@ import "./Blue-Simple.css"
 
 const BlueSimple = () => {
     return (
-        <div className="navBar">
+        <div className="blue-simple">
             <nav>
                 <h2> Features</h2>
+
                 <h2>Downloads</h2>
                 <h2>Resources</h2>
                 <h2>Company</h2>
             </nav>
+
             <div className="navBar-content">
                 <div>
                     <div>

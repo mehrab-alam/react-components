@@ -1,19 +1,24 @@
+.blue-simple {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .navBar-content {
     border: 2px solid;
     width: 900px;
 }
 
-nav {
+.blue-simple nav {
     display: flex;
     justify-content: space-between;
 }
 
-nav>div:first-child {
+.blue-simple nav>div:first-child {
     display: flex;
     justify-content: space-between;
 }
 
-nav>div:last-child {
+.blue-simple nav>div:last-child {
     display: flex;
     padding: 0 30px;
 
