@@ -1,0 +1,50 @@
+.navBar-content {
+    border: 2px solid;
+    width: 900px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>div:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>div:last-child {
+    display: flex;
+    padding: 0 30px;
+
+}
+
+.navBar-content>div:first-child {
+    display: flex;
+
+}
+
+.navBar-content>div:first-child>div {
+    border: 1px solid;
+    width: 50%;
+    padding: 20px;
+}
+
+.navBar-options {
+    transition: .4s all;
+}
+
+.navBar-options:hover {
+    background-color: rgb(182, 181, 181);
+}
+
+.navBar-options h3 {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+}
+
+.navBar-options p {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: rgb(139, 138, 138);
+}
