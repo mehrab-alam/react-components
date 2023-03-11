@@ -8,21 +8,12 @@
     width: 900px;
 }
 
-.blue-simple nav {
+.blue-simple-nav {
     display: flex;
     justify-content: space-between;
 }
 
-.blue-simple nav>div:first-child {
-    display: flex;
-    justify-content: space-between;
-}
 
-.blue-simple nav>div:last-child {
-    display: flex;
-    padding: 0 30px;
-
-}
 
 .navBar-content>div:first-child {
     display: flex;

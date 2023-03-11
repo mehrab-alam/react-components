@@ -3,14 +3,22 @@ import "./Blue-Simple.css"
 const BlueSimple = () => {
     return (
         <div className="blue-simple">
-            <nav>
-                <h2> Features</h2>
+            <nav className="blue-simple-nav">
+                <ul>Features
+                    <li>
+                        <div>
+                            <div>
 
+                            </div>
+                            <div></div>
+                        </div>
+                    </li>
+                </ul>
                 <h2>Downloads</h2>
                 <h2>Resources</h2>
                 <h2>Company</h2>
             </nav>
-
+            {/* 
             <div className="navBar-content">
                 <div>
                     <div>
@@ -56,7 +64,7 @@ const BlueSimple = () => {
                     </div>
                     <div>Watch demo</div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
