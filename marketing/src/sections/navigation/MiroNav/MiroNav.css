@@ -1,0 +1,109 @@
+.bright-bg {
+    background-color: #ffffff;
+}
+
+.dull-bg {
+    background-color: #f3f3f3
+}
+
+.miroNav-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1420px;
+    margin: 0 auto;
+}
+
+.container {
+    padding: 10px 0px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.miroNav-container a {
+    text-decoration: none;
+}
+
+.miroNav-menu {
+    display: flex;
+}
+
+.miroNav-product-menu {
+    display: flex;
+    align-items: center;
+}
+
+.product-open {
+    text-decoration: underline blue;
+
+}
+
+.miroNav-menu ul {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.miroNav-menu ul>li {
+    font-size: 1.3rem;
+    list-style: none;
+}
+
+.miroNav-menu ul>li a {
+    color: black;
+}
+
+.miroNav-container>div:last-child {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.miroNav-container>div:last-child a {
+    font-size: 1.2rem;
+}
+
+.globe-EN {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.globe-EN img:hover {
+    color: #4262ff;
+}
+
+.close {
+    transform: rotate(0deg);
+    transition: .4s;
+}
+
+.open {
+    transition: .4s;
+    transform: rotate(-180deg);
+}
+
+a {
+    transition: .4s all;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #4262ff !important;
+    text-decoration: none;
+}
+
+.signUp {
+    border-radius: 25px;
+    background-color: #4262ff !important;
+    padding: 10px 20px;
+    color: white;
+}
+
+.signUp:hover {
+    color: white !important;
+}
+
+.miro-section {
+    border: 0.2px solid #f0f0f0;
+    width: 100%;
+}
