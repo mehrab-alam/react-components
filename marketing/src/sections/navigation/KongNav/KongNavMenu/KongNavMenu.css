@@ -1,0 +1,78 @@
+.products-menu-option {
+    width: 100%;
+    position: absolute;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 40px;
+    background-color: #ffffff;
+    border: 1px solid;
+
+}
+
+
+.products-menu-option li {
+    list-style: none;
+    background-color: #fff;
+}
+
+
+.products-menu-option ul {
+    margin: 40px 0px;
+}
+
+div.menu-description {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+div.menu-description p {
+    margin-top: 10px;
+    color: #a1a1a2;
+
+}
+
+div.menu-description a {
+    text-decoration: none;
+    color: blue;
+    font-size: 1.2rem;
+}
+
+div.menu-description a:first-child {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+div.menu-description ul {
+    display: flex;
+    gap: 20px;
+    color: blue;
+    margin-top: 0;
+    margin-left: -40px;
+}
+
+.pipe {
+    color: black;
+}
+
+.kong-insomnia-mesh {
+    margin-top: -20px;
+}
+
+.menu-description>ul li {
+    font-weight: bold;
+}
+
+.menu-description>ul li:hover {
+    color: #537085;
+}
+
+.products-menu-option a {
+    font-weight: bold;
+}
+
+.products-menu-option a:hover {
+    color: #537085;
+}

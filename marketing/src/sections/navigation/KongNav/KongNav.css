@@ -1,0 +1,134 @@
+nav.kongnav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.kongnav-container {
+    background-color: #ffffff;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+.kongnav>div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.kongnav .kongnav-menu {
+    margin-right: 80px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.kongnav .product-menu {
+    font-weight: bold;
+}
+
+.kongnav .product-menu:hover {
+    color: #537085;
+}
+
+.kongnav .kongnav-menu img {
+    height: 20px;
+    margin-top: 5px;
+}
+
+.kongnav .kong-logo img {
+    margin-left: 20px;
+    width: auto;
+}
+
+
+.kongnav .kongnav-menu>li:first-child a {
+    display: flex;
+    align-items: center;
+}
+
+.kongnav .kongnav-link {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.kongnav .kongnav-link a {
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.kongnav .kongnav-link button {
+    font-size: 0.8rem;
+    padding: 15px 25px;
+    border-radius: 8px;
+}
+
+.kongnav .open {
+    rotate: 180deg;
+}
+
+.kongnav .demoBtn {
+    background-color: #1155cb;
+    color: #ffffff;
+    border: 1px solid #1155cb;
+    transition: .4s all;
+    transform: translateX(0);
+}
+
+.kongnav .demoBtn:hover {
+    background-image: linear-gradient(to left, #31056d, #1414ee);
+    transform: translateX(1);
+}
+
+.kongnav button {
+    cursor: pointer;
+}
+
+.kongnav .startBtn {
+    background-color: #ffffff;
+    color: #5284d8;
+    border: 1px solid #1155cb;
+    transition: .4s all ease-in-out;
+    transform: translateX(0);
+}
+
+.kongnav .kongnav-link a {
+    font-weight: bold;
+}
+
+.kongnav .kongnav-link a:hover {
+    color: #537085;
+}
+
+.kongnav .startBtn:hover {
+    background-image: linear-gradient(to left, #31056d, #1414ee);
+    /* background-color: #1155cb; */
+    color: white;
+    transform: translateX(1);
+
+}
+
+.kongnav .kongnav-menu-2 {
+    font-weight: bold;
+}
+
+.kongnav .kongnav-menu-2:hover {
+    color: #537085;
+}
+
+.kong-dullBackground {
+    z-index: -10;
+    background-color: #00000099;
+}
+
+.kong-brightBackground {
+    background-color: white;
+}
