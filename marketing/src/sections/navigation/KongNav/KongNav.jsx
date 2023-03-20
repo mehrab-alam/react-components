@@ -27,7 +27,6 @@ const KongNav = () => {
                                 <div onClick={(e) => {
                                     e.preventDefault();
                                     setOpen(!isOpen)
-
                                 }}>
                                     <a> <div className="product-menu">
                                         Products</div> <img className={isOpen ? "open" : "close"} src="/img/sections/navigation/KongNav/down-arrow.svg" alt="" /></a>
