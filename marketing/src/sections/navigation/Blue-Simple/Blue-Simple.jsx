@@ -79,6 +79,7 @@ const Feature = () => (
             <div className="ready-started">
                 <div>Ready to get started?</div>
                 <div>Take your documents to the next level with Nulis</div>
+
             </div>
             <div className="demo-video">Watch demo</div>
         </div>
