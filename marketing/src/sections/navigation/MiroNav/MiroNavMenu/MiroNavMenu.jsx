@@ -6,7 +6,7 @@ const MiroNavMenu = ({ isOpen }) => {
     return (
         <div className={`miroNavMenu ${isOpen ? "miroNav-open" : "miroNav-close"}`}>
             <div className="miroNavMenu-container">
-                <div className="">
+                <div >
                     <h2 className="phroduct-header">Product</h2>
                     <div className="miroNavMenu-productOption">
                         <div>

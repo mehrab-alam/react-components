@@ -24,15 +24,15 @@
     text-decoration: none;
 }
 
-.miroNav-menu {
+.miroNav-container .miroNav-menu {
     padding: 0;
 }
 
-.miroNav-menu>div:first-child {
+.miroNav-container .miroNav-menu>div:first-child {
     display: flex;
 }
 
-.miroNav-product-menu {
+.miroNav-container .miroNav-product-menu {
     display: flex;
     align-items: center;
 }
@@ -41,19 +41,19 @@
     border-bottom: 1px solid blue;
 } */
 
-.miroNav-menu ul {
+.miroNav-container .miroNav-menu ul {
     display: flex;
     gap: 40px;
     align-items: center;
 
 }
 
-.miroNav-menu ul>li {
+.miroNav-container .miroNav-menu ul>li {
     font-size: 1.3rem;
     list-style: none;
 }
 
-.miroNav-menu ul>li a {
+.miroNav-container .miroNav-menu ul>li a {
     color: black;
 }
 
@@ -63,37 +63,37 @@
     gap: 20px;
 }
 
-.miroNav-container>div:last-child a {
+.miroNav-container .miroNav-container>div:last-child a {
     font-size: 1.2rem;
 }
 
-.globe-EN {
+.miroNav-container .globe-EN {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-.globe-EN img:hover {
+.miroNav-container .globe-EN img:hover {
     color: #4262ff;
 }
 
-.close {
+.miroNav-container .close {
     transform: rotate(0deg);
     transition: .4s;
 }
 
-.open {
+.miroNav-container .open {
     transition: .4s;
     transform: rotate(-180deg);
 }
 
-a {
+.miroNav-container a {
     transition: .4s all;
 }
 
-a:hover {
+.miroNav-container a:hover {
     cursor: pointer;
-    color: #4262ff !important;
+    color: #4262ff;
     text-decoration: none;
 }
 
@@ -108,13 +108,13 @@ a:hover {
     color: white !important;
 }
 
-.miro-section {
+.miroNav-container .miro-section {
     border: 0.2px solid #f0f0f0;
     width: 100%;
 }
 
 
-.miroNav-underline-border-open {
+.miroNav-container .miroNav-underline-border-open {
     height: 2px;
     background-color: blue;
     width: 100px;
