@@ -20,23 +20,26 @@ const MiroNav = () => {
             <div className="container">
                 <nav className="miroNav-container">
                     <div className="miroNav-menu">
-                        <img src={react} alt="" />
-                        <ul>
-                            <li className="miroNav-menu-option" onClick={(e) => {
-                                setOpen(!isOpen)
-                            }}><span className={`miroNav-product-menu ${isOpen ? "product-open" : "product-close"}`}>
-                                    <a>Product</a>
-                                    <img className={isOpen ? "open" : "close"} src={arrow} alt="" />
-                                </span>
-                                <MiroNavMenu isOpen={isOpen} />
-                            </li>
-                            <li>
-                                <a href="">Solution</a>
-                            </li>
-                            <li><a href="">Resources</a></li>
-                            <li><a href="">Enterprise</a></li>
-                            <li><a href="">Pricing</a></li>
-                        </ul>
+                        <div>
+                            <img src={react} alt="" />
+                            <ul>
+                                <li className="miroNav-menu-option" onClick={(e) => {
+                                    setOpen(!isOpen)
+                                }}><span className={`miroNav-product-menu ${isOpen ? "product-open" : "product-close"}`}>
+                                        <a>Product</a>
+                                        <img className={isOpen ? "open" : "close"} src={arrow} alt="" />
+                                    </span>
+                                    <MiroNavMenu isOpen={isOpen} />
+                                </li>
+                                <li>
+                                    <a href="">Solution</a>
+                                </li>
+                                <li><a href="">Resources</a></li>
+                                <li><a href="">Enterprise</a></li>
+                                <li><a href="">Pricing</a></li>
+                            </ul>
+                        </div>
+                        <div className={isOpen ? "miroNav-underline-border-open" : "miroNav-underline-border-close"}></div>
                     </div>
                     <div>
 

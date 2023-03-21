@@ -3,8 +3,8 @@
     right: 0;
     left: 0;
     transform: scaleY(0);
-    transform-origin: top;
-    top: 60px;
+    transform-origin: top center;
+    top: 59px;
     transition: .4s all ease-in-out;
     z-index: 10;
     background-color: white;
@@ -95,12 +95,12 @@
 
 .see-change {
     font-size: 1.3rem;
-    text-decoration: underline !important;
+    border-bottom: 1px solid #4262ff !important;
     color: #4262ff !important;
 }
 
 .see-change:hover {
-    text-decoration: none !important;
+    border-bottom: none !important;
 }
 
 .contact-sales {
@@ -111,12 +111,12 @@
 
 .contact-sales a {
     font-size: 1.3rem;
-    text-decoration: underline !important;
+    border-bottom: 1px solid #4262ff !important;
     color: #4262ff !important;
 }
 
 .contact-sales a:hover {
-    text-decoration: none !important;
+    border-bottom: none !important;
 }
 
 .right-arrow {

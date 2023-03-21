@@ -1,6 +1,5 @@
 import "./MiroNavMenu.css"
-import tempImg from "../../../../img/sections/hero/new-temp.png"
-import slackImg from "../../../../img/sections/hero/slack.png"
+
 
 const MiroNavMenu = ({ isOpen }) => {
 
@@ -14,7 +13,7 @@ const MiroNavMenu = ({ isOpen }) => {
                             <div>
                                 <a>WhiteBoard</a>
                                 <p>
-                                    Collaborate to create <br /> the next big thing
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 </p>
                             </div>
                         </div>
@@ -24,7 +23,7 @@ const MiroNavMenu = ({ isOpen }) => {
                                     Miro Developer <br /> Platform
                                 </a>
                                 <p>
-                                    Build with our API, SDK,<br /> and iFrame
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 </p>
                             </div>
                         </div>
@@ -34,7 +33,7 @@ const MiroNavMenu = ({ isOpen }) => {
                                     Apps & <br /> Integrations
                                 </a>
                                 <p>
-                                    Work smarter with <br /> connected tools
+                                    Lorem ipsum dolor sit amet consectetur.
                                 </p>
                             </div>
                         </div>
@@ -44,7 +43,7 @@ const MiroNavMenu = ({ isOpen }) => {
                                     Miro for Devices
                                 </a>
                                 <p>
-                                    Collaborate with your <br /> team from anywhere
+                                    Lorem ipsum dolor sit amet consectetur.
                                 </p>
                             </div>
                         </div>
@@ -54,7 +53,7 @@ const MiroNavMenu = ({ isOpen }) => {
                                     Templates
                                 </a>
                                 <p>
-                                    Save time with our <br /> ready-made <br /> frameworks and<br /> proven  workflows
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
                                 </p>
                             </div>
@@ -65,7 +64,7 @@ const MiroNavMenu = ({ isOpen }) => {
                                     Security
                                 </a>
                                 <p>
-                                    Keep your work safe <br /> with enterprise-grade <br /> data protection
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 </p>
                             </div>
                         </div>
@@ -75,20 +74,20 @@ const MiroNavMenu = ({ isOpen }) => {
                 <div className="miroNavMenu-newOption">
                     <h2>What's new</h2>
                     <div className="miroNavMenu-newOption-content">
-                        <img src={tempImg} alt="" />
+                        <img src="/img/sections/navigation/MiroNav/new-temp.png" alt="" />
                         <div>
                             <a>New templates</a>
                             <p>
-                                800+ creators, 1000+ templates, find everything you need
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             </p>
                         </div>
                     </div>
                     <div className="miroNavMenu-newOption-content">
-                        <img src={slackImg} alt="" />
+                        <img src="/img/sections/navigation/MiroNav/slack.png" alt="" />
                         <div>
                             <a>Sign in with Slack</a>
                             <p>
-                                Connect to Miro by using your  <br /> Slack
+                                Lorem ipsum dolor sit amet consectetur  adipisicing elit.
                             </p>
                         </div>
                     </div>

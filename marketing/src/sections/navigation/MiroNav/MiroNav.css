@@ -1,9 +1,11 @@
 .bright-bg {
     background-color: #ffffff;
+    margin: 0;
 }
 
 .dull-bg {
-    background-color: #f3f3f3
+    background-color: #f3f3f3;
+    margin: 0;
 }
 
 .miroNav-container {
@@ -23,6 +25,10 @@
 }
 
 .miroNav-menu {
+    padding: 0;
+}
+
+.miroNav-menu>div:first-child {
     display: flex;
 }
 
@@ -31,15 +37,15 @@
     align-items: center;
 }
 
-.product-open {
+/* .product-open {
     border-bottom: 1px solid blue;
-
-}
+} */
 
 .miroNav-menu ul {
     display: flex;
     gap: 40px;
     align-items: center;
+
 }
 
 .miroNav-menu ul>li {
@@ -105,4 +111,16 @@ a:hover {
 .miro-section {
     border: 0.2px solid #f0f0f0;
     width: 100%;
+}
+
+
+.miroNav-underline-border-open {
+    height: 2px;
+    background-color: blue;
+    width: 100px;
+    transform-origin: left center;
+    transition: transform 0.35s cubic-bezier(0, 0, 0.16, 0.96) 0s;
+    transform: translateX(123px) scaleX(0.872656);
+    position: absolute;
+    left: 215px;
 }
