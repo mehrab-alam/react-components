@@ -1,4 +1,7 @@
 import "./MiroNavMenu.css"
+import navLinksItems from "../MiroNavItems"
+
+
 
 
 const MiroNavMenu = ({ isOpen }) => {
@@ -9,72 +12,23 @@ const MiroNavMenu = ({ isOpen }) => {
                 <div >
                     <h2 className="phroduct-header">Product</h2>
                     <div className="miroNavMenu-productOption">
-                        <div>
-                            <div>
-                                <a>WhiteBoard</a>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                </p>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <a>
-                                    Miro Developer <br /> Platform
-                                </a>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                </p>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <a>
-                                    Apps & <br /> Integrations
-                                </a>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur.
-                                </p>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <a>
-                                    Miro for Devices
-                                </a>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur.
-                                </p>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <a>
-                                    Templates
-                                </a>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
-                                </p>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <a>
-                                    Security
-                                </a>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                </p>
-                            </div>
-                        </div>
+                        {navLinksItems.map((t, i) => {
+                            return (
+                                <>
+                                    <div key={i}>
+                                        <a>{t.sublink}</a>
+                                        <p>{t.description}</p>
+                                    </div>
+                                </>
+                            )
+                        })}
                     </div>
 
                 </div>
                 <div className="miroNavMenu-newOption">
                     <h2>What's new</h2>
                     <div className="miroNavMenu-newOption-content">
-                        <img src="/img/sections/navigation/MiroNav/new-temp.png" alt="" />
+                        <img src="" alt="" />
                         <div>
                             <a>New templates</a>
                             <p>
@@ -83,7 +37,7 @@ const MiroNavMenu = ({ isOpen }) => {
                         </div>
                     </div>
                     <div className="miroNavMenu-newOption-content">
-                        <img src="/img/sections/navigation/MiroNav/slack.png" alt="" />
+                        <img src="" alt="" />
                         <div>
                             <a>Sign in with Slack</a>
                             <p>

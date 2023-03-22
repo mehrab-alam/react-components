@@ -1,14 +1,17 @@
 import "./MiroNav.css"
-import globe from "../../../img/sections/hero/globe.svg"
-import arrow from "../../../img/sections/hero/arrow.svg"
 import react from "../../../img/sections/hero/file-react.svg"
 import MiroNavMenu from "./MiroNavMenu/MiroNavMenu"
 import React from "react"
 import "./MiroNavResponsive.css"
+import navLinksItems from "./MiroNavItems"
+
+
 
 const MiroNav = () => {
     const [isOpen, setOpen] = React.useState(false)
     const [isHamburger, setHamburger] = React.useState(false)
+    const [isTrigger, setTrigger] = React.useState(false)
+
     function backGround() {
         if (isOpen) {
             document.body.className = "dull-bg"
@@ -20,7 +23,7 @@ const MiroNav = () => {
     return (
         <div className={backGround()}>
             <div className="container">
-                <nav className="miroNav-container">
+                <nav className={`miro-nav-container ${isHamburger ? "miro-nav-open" : "miro-nav-close"}`}>
                     <div className="miroNav-menu">
                         <div>
                             <img src={react} alt="" />
@@ -29,22 +32,22 @@ const MiroNav = () => {
                                     setOpen(!isOpen)
                                 }}><span className={`miroNav-product-menu ${isOpen ? "product-open" : "product-close"}`}>
                                         <a>Product</a>
-                                        <img className={isOpen ? "open" : "close"} src={arrow} alt="" />
+                                        <img className={isOpen ? "open" : "close"} src="img/sections/navigation/MiroNav/arrow.svg" alt="" />
                                     </span>
                                     <MiroNavMenu isOpen={isOpen} />
                                 </li>
                                 <li>
-                                    <a href="">Solution</a>
+                                    <a className="nav-links" href="">Solution</a>
                                 </li>
-                                <li><a href="">Resources</a></li>
-                                <li><a href="">Enterprise</a></li>
-                                <li><a href="">Pricing</a></li>
+                                <li><a className="nav-links" href="">Resources</a></li>
+                                <li><a className="nav-links" href="">Enterprise</a></li>
+                                <li><a className="nav-links" href="">Pricing</a></li>
                             </ul>
                         </div>
                         <div className={isOpen ? "miroNav-underline-border-open" : "miroNav-underline-border-close"}></div>
                     </div>
                     <div className="action-links">
-                        <a className="globe-EN"><img src={globe} alt="" />
+                        <a className="globe-EN"><img src="img/sections/navigation/MiroNav/globe.svg" alt="" />
                             <div> EN</div></a>
                         <a>Contact Sales</a>
                         <a href="">Login</a>
@@ -59,10 +62,56 @@ const MiroNav = () => {
 
             </div >
             <div className={`mobile-nav-links ${isHamburger ? "nav-links-open" : "nav-links-close"}`}>
-                <a href="">Home</a>
-                <a href="">Resources</a>
-                <a href="">Enterprises</a>
-                <a href="">pricing</a>
+                <div href=""> <span className={`sub-nav-links ${isTrigger ? "trigger-open" : "trigger-close"}`} onClick={(e) => {
+                    setTrigger(!isTrigger)
+                }}>
+                    <div className={` ${isTrigger ? "sub-product-open" : "sub-product-close"}`}> Products</div>
+                    <img className="product-child-nav-arrow" src="img/sections/navigation/MiroNav/arrow.svg" alt="" /></span>
+                    <div className={`children-trigger ${isTrigger ? "children-trigger-open" : "children-trigger-close"}`}>
+                        <h4>Product</h4>
+                        {navLinksItems.map((t, i) => {
+                            return (
+                                <>
+                                    <a className="children-trigger-links" href="" key={i}>
+                                        <div>{t.sublink}</div>
+                                        <div>{t.description}</div>
+                                    </a>
+                                </>
+
+                            )
+
+                        })}
+                    </div>
+                </div>
+                <a href="" className="sub-nav-links">Resources
+                    <span>
+                        <img className="product-child-nav-arrow" src="img/sections/navigation/MiroNav/arrow.svg" alt="" />
+                    </span>
+                </a>
+                <a href="" className="sub-nav-links">Enterprises
+                    <span>
+                        <img className="product-child-nav-arrow" src="img/sections/navigation/MiroNav/arrow.svg" alt="" />
+                    </span>
+                </a>
+                <a href="" className="sub-nav-links">Solutions
+                    <span>
+                        <img className="product-child-nav-arrow" src="img/sections/navigation/MiroNav/arrow.svg" alt="" />
+                    </span>
+                </a>
+                <a href="" className="sub-nav-links">pricing
+                    <span>
+                        <img className="product-child-nav-arrow" src="img/sections/navigation/MiroNav/arrow.svg" alt="" />
+                    </span>
+                </a>
+                <div className="sub-action-link">
+                    <button className="sub-action-btn">Sign up free <span> &rarr;</span></button>
+                    <div>
+                        <a href="">Login</a>
+                        <a href="">Contact Sales</a>
+                        <a className="sub-globe-EN"><img src="img/sections/navigation/MiroNav/globe.svg" alt="" />
+                            <div> EN</div></a>
+                    </div>
+                </div>
             </div>
             <section className="miro-section">
 

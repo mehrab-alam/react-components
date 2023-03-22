@@ -1,11 +1,23 @@
 @media only screen and (max-width:415px) {
-    .miroNav-container {
+
+
+    .miro-nav-container {
         align-items: center;
         border-bottom: 1px solid;
         height: 70px;
         position: relative;
         z-index: 5;
-        background-color: #fff;
+    }
+
+    .miro-nav-open {
+        background-color: #eee;
+        border-bottom: 1px solid #ffffff;
+        transform-origin: top;
+        transition: .4s all;
+    }
+
+    .miro-nav-close {
+        background-color: #ffffff;
     }
 
     .miro-nav-links li {
@@ -20,19 +32,22 @@
         display: none;
     }
 
-    .action-links a:last-child {
-        padding-right: 0 10px;
+    .miro-nav-container.action-links a:last-child {
+        padding-right: 10px;
     }
-
-
 
     .hamburger .slice {
         width: 30px;
         height: 3px;
-        background-color: black;
+        background-color: #ffd02f;
         margin-right: 10px;
         cursor: pointer;
-        transition: .5s ease-in;
+        transition: .2s ease-in;
+
+    }
+
+    .isHamburger-close .slice {
+        background-color: black;
     }
 
     .hamburger .slice:not(:last-child) {
@@ -60,7 +75,6 @@
         padding: 10px;
         font-size: 1.2rem;
         color: black;
-        background-color: #f0f0f0;
         gap: 20px 0;
         position: relative;
         z-index: 1;
@@ -69,7 +83,8 @@
 
     .mobile-nav-links a {
         text-decoration: none;
-
+        font-size: 1.3rem;
+        color: black;
     }
 
     .nav-links-close {
@@ -81,5 +96,117 @@
     .nav-links-open {
         transform: translateY(0);
         transform-origin: top;
+        background-color: #eee;
+        transition: .4s ease-in;
     }
+
+    .mobile-nav-links span {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: black;
+    }
+
+    .children-trigger h4 {
+        padding: 0 20px;
+        color: black;
+    }
+
+    .children-trigger-links>div {
+        padding: 0 20px;
+    }
+
+    .children-trigger-links>div:last-child {
+        margin-bottom: 20px;
+        font-size: 1rem;
+        color: black;
+
+        padding-bottom: 10px;
+    }
+
+    .children-trigger-links>div:first-child {
+        font-size: 1.3rem;
+    }
+
+    .trigger-open .product-child-nav-arrow {
+        transform: rotate(-180deg);
+    }
+
+    .children-trigger-open {
+        transform: translateY(0);
+        transform-origin: bottom;
+    }
+
+    .children-trigger-close {
+        transform: translateY(-140%);
+        position: absolute;
+        z-index: 1;
+    }
+
+    .mobile-nav-links .sub-action-link .sub-action-btn {
+        outline: none;
+        border: none;
+        justify-content: center;
+        padding: 10px 20px;
+        gap: 0 10px;
+        width: 250px;
+        display: flex;
+        align-items: center;
+        background-color: #291bc5;
+        border-radius: 25px;
+        color: white;
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .mobile-nav-links .sub-action-link {
+        margin: 60px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobile-nav-links .sub-action-link a {
+        padding: 0 10px;
+    }
+
+    .mobile-nav-links .sub-action-link .sub-globe-EN {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .nav-links-open .sub-product-open {
+        color: #ffd02f;
+    }
+
+    .mobile-nav-links .sub-nav-links {
+        border-bottom: 1px solid black;
+        margin-bottom: 10px;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+    }
+
+    .trigger-close {
+        border-bottom: 1px solid white;
+    }
+
+    .miroNav-underline-border-open {
+        display: none;
+    }
+
+    .miro-nav-container .hamburger {
+        display: block;
+
+    }
+
+    .miro-nav-container .signUp {
+        display: none;
+    }
+
+
 }

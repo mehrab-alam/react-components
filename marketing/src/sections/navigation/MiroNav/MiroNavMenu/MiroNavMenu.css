@@ -1,7 +1,7 @@
 .miroNavMenu {
     position: absolute;
-    right: 0;
-    left: 0;
+    right: -250px;
+    left: -250px;
     transform: scaleY(0);
     transform-origin: top center;
     top: 59px;
@@ -79,9 +79,12 @@
 }
 
 .miroNavMenu .miroNavMenu-newOption-content img {
-    height: 70px;
-    width: auto;
+    height: 75px;
+    width: 200px;
+    outline: none;
+    border: none;
     border-radius: 15px;
+    background-color: #eee;
 }
 
 .miroNavMenu .miroNavMenu-newOption-content a {
@@ -95,12 +98,12 @@
 
 .miroNavMenu .see-change {
     font-size: 1.3rem;
-    border-bottom: 1px solid #4262ff !important;
-    color: #4262ff !important;
+    border-bottom: 1px solid #4262ff;
+    color: #4262ff;
 }
 
 .see-change:hover {
-    border-bottom: none !important;
+    border-bottom: none;
 }
 
 .miroNavMenu .contact-sales {
@@ -111,14 +114,15 @@
 
 .miroNavMenu .contact-sales a {
     font-size: 1.3rem;
-    border-bottom: 1px solid #4262ff !important;
-    color: #4262ff !important;
+    border-bottom: 1px solid #4262ff;
+    color: #4262ff;
 }
 
 .miroNavMenu .contact-sales a:hover {
-    border-bottom: none !important;
+    border-bottom: none;
 }
 
+
 .miroNavMenu .right-arrow {
-    color: #4262ff !important;
+    color: #4262ff;
 }
