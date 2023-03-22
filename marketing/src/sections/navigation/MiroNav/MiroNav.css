@@ -57,13 +57,13 @@
     color: black;
 }
 
-.miroNav-container>div:last-child {
+.action-links {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.miroNav-container .miroNav-container>div:last-child a {
+.miroNav-container .action-links a {
     font-size: 1.2rem;
 }
 
@@ -123,4 +123,8 @@
     transform: translateX(123px) scaleX(0.872656);
     position: absolute;
     left: 215px;
+}
+
+.mobile-nav-links {
+    visibility: hidden;
 }
