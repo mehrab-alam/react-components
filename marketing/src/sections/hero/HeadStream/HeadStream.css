@@ -10,22 +10,10 @@
 .section-headstream h1 {
   font-size: 3rem;
 }
-
 .section-headstream p {
   font-size: 1.5rem;
   color: #505050;
 }
-
-.section-headstream button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: bold;
-  background-color: #4ea5e0;
-}
-
 .section-headstream > div:last-child {
   display: grid;
   grid-template-columns: repeat(5, 100px);
@@ -33,15 +21,14 @@
   gap: 20px;
 }
 
-.stream-container div.cylinder {
+.section-headstream .stream-container div.cylinder {
   width: 100px;
   height: 200px;
   border-radius: 50px;
   margin-bottom: 10px;
-  background-color: #000;
 }
 
-.stream-container div.circle {
+.section-headstream .stream-container div.circle {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -64,7 +51,6 @@
 }
 
 .section-headstream button {
-  -webkit-appearance: none;
   background: linear-gradient(to right, #748bde 0%, #fceeb5 50%, #ee786e 100%);
   background-size: 500%;
   border: none;
@@ -73,19 +59,17 @@
   color: #fff;
   cursor: pointer;
   height: 3rem;
-  letter-spacing: 0.05em;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
   width: 10rem;
 }
 
-button:hover {
+.section-headstream button:hover {
   animation-name: gradient;
-  -webkit-animation-name: gradient;
   animation-duration: 2s;
-  -webkit-animation-duration: s;
   animation-iteration-count: 1;
-  -webkit-animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
 }
 
 @keyframes gradient {
