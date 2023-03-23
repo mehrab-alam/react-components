@@ -1,4 +1,4 @@
-.miroNavMenu {
+.miro-nav-menu {
     position: absolute;
     right: -250px;
     left: -250px;
@@ -15,7 +15,7 @@
     transform: scaleY(1);
 }
 
-.miroNavMenu .miroNavMenu-container {
+.miro-nav-menu .miroNavMenu-container {
     padding: 40px 0px;
     max-width: 1420px;
     margin: 0 auto;
@@ -24,47 +24,47 @@
     height: 400px;
 }
 
-.miroNavMenu hr {
+.miro-nav-menu hr {
     height: 1.5px;
     background-color: #e9e7e7;
     border: none;
 }
 
-.miroNavMenu .miroNavMenu-container p {
+.miro-nav-menu .miroNavMenu-container p {
     margin-top: 10px;
     color: #a2a2a2;
     font-size: 1rem;
 }
 
 
-.miroNavMenu .miroNavMenu-productOption {
+.miro-nav-menu .miroNavMenu-productOption {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 20px;
     row-gap: 10px;
 }
 
-.miroNavMenu .miroNavMenu-productOption>div {
+.miro-nav-menu .miroNavMenu-productOption>div {
     padding: 10px;
     width: 180px;
     height: 100px;
     border-radius: 10px;
 }
 
-.miroNavMenu .miroNavMenu .phroduct-header {
+.miro-nav-menu .phroduct-header {
     margin-top: 0;
     padding-left: 10px;
 }
 
-.miroNavMenu .miroNavMenu-productOption>div:hover {
+.miro-nav-menu .miroNavMenu-productOption>div:hover {
     background-color: #e5e5e5a9;
 }
 
-.miroNavMenu .miroNavMenu-productOption a {
+.miro-nav-menu .miroNavMenu-productOption a {
     font-size: 1.2rem;
 }
 
-.miroNavMenu .miroNavMenu-newOption {
+.miro-nav-menu .miroNnav-menu-new-option {
     background-color: #fbe6e5;
     padding: 30px;
     border-radius: 15px;
@@ -72,13 +72,13 @@
     height: 350px;
 }
 
-.miroNavMenu .miroNavMenu-newOption-content {
+.miro-nav-menu .miroNnav-menu-new-option-content {
     display: flex;
     margin-bottom: 40px;
     gap: 40px;
 }
 
-.miroNavMenu .miroNavMenu-newOption-content img {
+.miro-nav-menu .miroNnav-menu-new-option-content img {
     height: 75px;
     width: 200px;
     outline: none;
@@ -87,16 +87,16 @@
     background-color: #eee;
 }
 
-.miroNavMenu .miroNavMenu-newOption-content a {
+.miro-nav-menu .miroNnav-menu-new-option-content a {
     font-size: 1.4rem;
 }
 
-.miroNavMenu .miroNavMenu-newOption-content p {
+.miro-nav-menu .miroNnav-menu-new-option-content p {
     margin-top: 5px;
     font-size: 1rem;
 }
 
-.miroNavMenu .see-change {
+.miro-nav-menu .see-change {
     font-size: 1.3rem;
     border-bottom: 1px solid #4262ff;
     color: #4262ff;
@@ -106,23 +106,23 @@
     border-bottom: none;
 }
 
-.miroNavMenu .contact-sales {
+.miro-nav-menu .contact-sales {
     max-width: 1420px;
     margin: 0 auto;
     padding-bottom: 18px;
 }
 
-.miroNavMenu .contact-sales a {
+.miro-nav-menu .contact-sales a {
     font-size: 1.3rem;
     border-bottom: 1px solid #4262ff;
     color: #4262ff;
 }
 
-.miroNavMenu .contact-sales a:hover {
+.miro-nav-menu .contact-sales a:hover {
     border-bottom: none;
 }
 
 
-.miroNavMenu .right-arrow {
+.miro-nav-menu .right-arrow {
     color: #4262ff;
 }

@@ -7,7 +7,7 @@ import navLinksItems from "../MiroNavItems"
 const MiroNavMenu = ({ isOpen }) => {
 
     return (
-        <div className={`miroNavMenu ${isOpen ? "miroNav-open" : "miroNav-close"}`}>
+        <div className={`miro-nav-menu ${isOpen ? "miroNav-open" : "miroNav-close"}`}>
             <div className="miroNavMenu-container">
                 <div >
                     <h2 className="phroduct-header">Product</h2>
@@ -25,9 +25,9 @@ const MiroNavMenu = ({ isOpen }) => {
                     </div>
 
                 </div>
-                <div className="miroNavMenu-newOption">
+                <div className="miroNnav-menu-new-option">
                     <h2>What's new</h2>
-                    <div className="miroNavMenu-newOption-content">
+                    <div className="miroNnav-menu-new-option-content">
                         <img src="" alt="" />
                         <div>
                             <a>New templates</a>
@@ -36,7 +36,7 @@ const MiroNavMenu = ({ isOpen }) => {
                             </p>
                         </div>
                     </div>
-                    <div className="miroNavMenu-newOption-content">
+                    <div className="miroNnav-menu-new-option-content">
                         <img src="" alt="" />
                         <div>
                             <a>Sign in with Slack</a>

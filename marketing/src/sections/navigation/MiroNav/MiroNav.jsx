@@ -1,5 +1,5 @@
 import "./MiroNav.css"
-import react from "../../../img/sections/hero/file-react.svg"
+
 import MiroNavMenu from "./MiroNavMenu/MiroNavMenu"
 import React from "react"
 import "./MiroNavResponsive.css"
@@ -10,7 +10,7 @@ import navLinksItems from "./MiroNavItems"
 const MiroNav = () => {
     const [isOpen, setOpen] = React.useState(false)
     const [isHamburger, setHamburger] = React.useState(false)
-    const [isTrigger, setTrigger] = React.useState(false)
+    const [subNavExpanded, setSubNavExpanded] = React.useState(false)
 
     function backGround() {
         if (isOpen) {
@@ -26,7 +26,7 @@ const MiroNav = () => {
                 <nav className={`miro-nav-container ${isHamburger ? "miro-nav-open" : "miro-nav-close"}`}>
                     <div className="miroNav-menu">
                         <div>
-                            <img src={react} alt="" />
+                            <img src="img/sections/navigation/MiroNav/file-react.svg" alt="" />
                             <ul className="miro-nav-links">
                                 <li className="miroNav-menu-option" onClick={(e) => {
                                     setOpen(!isOpen)
@@ -62,12 +62,12 @@ const MiroNav = () => {
 
             </div >
             <div className={`mobile-nav-links ${isHamburger ? "nav-links-open" : "nav-links-close"}`}>
-                <div href=""> <span className={`sub-nav-links ${isTrigger ? "trigger-open" : "trigger-close"}`} onClick={(e) => {
-                    setTrigger(!isTrigger)
+                <div href=""> <span className={`sub-nav-links ${subNavExpanded ? "trigger-open" : "trigger-close"}`} onClick={(e) => {
+                    setSubNavExpanded(!subNavExpanded)
                 }}>
-                    <div className={` ${isTrigger ? "sub-product-open" : "sub-product-close"}`}> Products</div>
+                    <div className={` ${subNavExpanded ? "sub-product-open" : "sub-product-close"}`}> Products</div>
                     <img className="product-child-nav-arrow" src="img/sections/navigation/MiroNav/arrow.svg" alt="" /></span>
-                    <div className={`children-trigger ${isTrigger ? "children-trigger-open" : "children-trigger-close"}`}>
+                    <div className={`children-trigger ${subNavExpanded ? "children-trigger-open" : "children-trigger-close"}`}>
                         <h4>Product</h4>
                         {navLinksItems.map((t, i) => {
                             return (

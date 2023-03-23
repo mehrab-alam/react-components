@@ -39,7 +39,7 @@
     .hamburger .slice {
         width: 30px;
         height: 3px;
-        background-color: #ffd02f;
+        background-color: black;
         margin-right: 10px;
         cursor: pointer;
         transition: .2s ease-in;
