@@ -7,6 +7,7 @@ import navLinksItems from "./MiroNavItems"
 
 
 
+
 const MiroNav = () => {
     const [isOpen, setOpen] = React.useState(false)
     const [isHamburger, setHamburger] = React.useState(false)
@@ -53,7 +54,13 @@ const MiroNav = () => {
                         <a href="">Login</a>
                         <a href="" className="signUp">Sign up free <span>&rarr;</span></a>
                     </div>
-                    <div className={`hamburger ${isHamburger ? "isHamburger-open" : "isHamburger-close"}`} onClick={() => { setHamburger(!isHamburger) }}>
+                    <div className={`hamburger ${isHamburger ? "isHamburger-open " : "isHamburger-close"} `} onClick={() => {
+                        if (isHamburger) {
+                            setSubNavExpanded(false)
+                        }
+                        setHamburger(!isHamburger)
+                    }
+                    }>
                         <div className="slice slice-1"></div>
                         <div className="slice slice-2"></div>
                         <div className="slice slice-3"></div>
@@ -62,12 +69,12 @@ const MiroNav = () => {
 
             </div >
             <div className={`mobile-nav-links ${isHamburger ? "nav-links-open" : "nav-links-close"}`}>
-                <div href=""> <span className={`sub-nav-links ${subNavExpanded ? "trigger-open" : "trigger-close"}`} onClick={(e) => {
+                <div href=""> <span className={`sub-nav-links ${subNavExpanded ? "trigger-open" : "trigger-close"} `} onClick={(e) => {
                     setSubNavExpanded(!subNavExpanded)
                 }}>
                     <div className={` ${subNavExpanded ? "sub-product-open" : "sub-product-close"}`}> Products</div>
                     <img className="product-child-nav-arrow" src="img/sections/navigation/MiroNav/arrow.svg" alt="" /></span>
-                    <div className={`children-trigger ${subNavExpanded ? "children-trigger-open" : "children-trigger-close"}`}>
+                    <div className={`children-trigger ${subNavExpanded ? "children-trigger-open" : "children-trigger-close"} `}>
                         <h4>Product</h4>
                         {navLinksItems.map((t, i) => {
                             return (
@@ -77,30 +84,24 @@ const MiroNav = () => {
                                         <div>{t.description}</div>
                                     </a>
                                 </>
-
                             )
-
                         })}
                     </div>
                 </div>
                 <a href="" className="sub-nav-links">Resources
                     <span>
-                        <img className="product-child-nav-arrow" src="img/sections/navigation/MiroNav/arrow.svg" alt="" />
                     </span>
                 </a>
                 <a href="" className="sub-nav-links">Enterprises
                     <span>
-                        <img className="product-child-nav-arrow" src="img/sections/navigation/MiroNav/arrow.svg" alt="" />
                     </span>
                 </a>
                 <a href="" className="sub-nav-links">Solutions
                     <span>
-                        <img className="product-child-nav-arrow" src="img/sections/navigation/MiroNav/arrow.svg" alt="" />
                     </span>
                 </a>
                 <a href="" className="sub-nav-links">pricing
                     <span>
-                        <img className="product-child-nav-arrow" src="img/sections/navigation/MiroNav/arrow.svg" alt="" />
                     </span>
                 </a>
                 <div className="sub-action-link">
