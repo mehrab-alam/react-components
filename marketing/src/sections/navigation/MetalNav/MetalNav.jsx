@@ -1,13 +1,13 @@
 import React from "react";
-import "./AlloyNav.css"
+import "./MetalNav.css"
 
 const ProductMenu = () => (
 
-    <nav className="menu-list">
+    <nav className="product-menu-list">
         <ul>
-            <li className="menu-li">
+            <li className="product-menu-li">
                 <div>
-                    <div className="menu-items">
+                    <div className="product-menu-items">
                         <div >
                             <img src='/img/sections/hero/HeadStream/alloyLogos.png' alt='' height={30} />
                         </div>
@@ -27,7 +27,7 @@ const ProductMenu = () => (
                         <a href=""><span>Pricing</span></a>
                     </div></div>
                 <div>
-                    <div className="menu-items">
+                    <div className="product-menu-items">
                         <div >
                             <img src='/img/sections/hero/HeadStream/alloyLogos.png' alt='' height={30} />
                         </div>
@@ -51,16 +51,16 @@ const ProductMenu = () => (
     </nav>
 );
 
-const AlloyNav = () => {
+const MetalNav = () => {
 
     const [isOpen, setOpen] = React.useState(false)
 
     return (
 
-        <nav className="alloy-nav">
+        <nav className="metal-nav">
             <div>
                 <img id="alloy-logo" src='/img/sections/hero/HeadStream/alloyLogos.png' alt='' height={30} />
-                <a className="alloy-title" href=""><span>alloy</span></a>
+                <a className="alloy-title" href="">Alloy</a>
                 <a className="menu" href="">
                     <div style={{ display: "inline-block" }} onClick={(e) => {
                         e.preventDefault();
@@ -78,7 +78,7 @@ const AlloyNav = () => {
                 <a href=""><span>Resources</span></a>
 
             </div>
-            <div className="alloy-right-nav">
+            <div className="metal-right-nav">
                 <a href=""><span>Book Demo</span></a>
                 <a href=""><span>Login</span></a>
                 <button>Try it free</button>
@@ -89,4 +89,4 @@ const AlloyNav = () => {
     );
 };
 
-export default AlloyNav;
+export default MetalNav;
