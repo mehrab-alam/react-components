@@ -3,14 +3,14 @@
 
     .miro-nav-container {
         align-items: center;
-        border-bottom: 1px solid;
+        border-bottom: 1px solid #cfcfcf;
         height: 70px;
         position: relative;
         z-index: 5;
     }
 
     .miro-nav-open {
-        background-color: #eee;
+        background-color: #ffd02f;
         border-bottom: 1px solid #ffffff;
         transform-origin: top;
         transition: .4s all;
@@ -43,7 +43,6 @@
         margin-right: 10px;
         cursor: pointer;
         transition: .2s ease-in;
-
     }
 
     .isHamburger-close .slice {
@@ -120,7 +119,6 @@
         margin-bottom: 20px;
         font-size: 1rem;
         color: black;
-
         padding-bottom: 10px;
     }
 
@@ -137,10 +135,13 @@
         transform-origin: bottom;
     }
 
+
+
     .children-trigger-close {
         transform: translateY(-140%);
         position: absolute;
         z-index: 1;
+
     }
 
     .mobile-nav-links .sub-action-link .sub-action-btn {
@@ -160,7 +161,7 @@
     }
 
     .mobile-nav-links .sub-action-link {
-        margin: 60px 0px;
+        margin: 83px 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -182,7 +183,7 @@
     }
 
     .mobile-nav-links .sub-nav-links {
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid #cfcfcf;
         margin-bottom: 10px;
         font-weight: bold;
         display: flex;
@@ -208,6 +209,11 @@
         display: none;
     }
 
+    .children-trigger-links>div:first-child {
+        color: blue;
+    }
 
-
+    .children-trigger-links>div:last-child {
+        color: #343232;
+    }
 }

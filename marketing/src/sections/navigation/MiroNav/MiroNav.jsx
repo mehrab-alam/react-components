@@ -72,7 +72,7 @@ const MiroNav = () => {
                 <div href=""> <span className={`sub-nav-links ${subNavExpanded ? "trigger-open" : "trigger-close"} `} onClick={(e) => {
                     setSubNavExpanded(!subNavExpanded)
                 }}>
-                    <div className={` ${subNavExpanded ? "sub-product-open" : "sub-product-close"}`}> Products</div>
+                    <div className={` product-sub-nav ${subNavExpanded ? "sub-product-open" : "sub-product-close"}`}> Products</div>
                     <img className="product-child-nav-arrow" src="img/sections/navigation/MiroNav/arrow.svg" alt="" /></span>
                     <div className={`children-trigger ${subNavExpanded ? "children-trigger-open" : "children-trigger-close"} `}>
                         <h4>Product</h4>
@@ -80,7 +80,7 @@ const MiroNav = () => {
                             return (
                                 <>
                                     <a className="children-trigger-links" href="" key={i}>
-                                        <div>{t.sublink}</div>
+                                        <div >{t.sublink}</div>
                                         <div>{t.description}</div>
                                     </a>
                                 </>
@@ -88,21 +88,17 @@ const MiroNav = () => {
                         })}
                     </div>
                 </div>
-                <a href="" className="sub-nav-links">Resources
-                    <span>
-                    </span>
+                <a href="" className={`sub-nav-links `}>Resources
+
                 </a>
-                <a href="" className="sub-nav-links">Enterprises
-                    <span>
-                    </span>
+                <a href="" className={`sub-nav-links `}>Enterprises
+
                 </a>
-                <a href="" className="sub-nav-links">Solutions
-                    <span>
-                    </span>
+                <a href="" className={`sub-nav-links `}>Solutions
+
                 </a>
-                <a href="" className="sub-nav-links">pricing
-                    <span>
-                    </span>
+                <a href="" className={`sub-nav-links `}>pricing
+
                 </a>
                 <div className="sub-action-link">
                     <button className="sub-action-btn">Sign up free <span> &rarr;</span></button>
