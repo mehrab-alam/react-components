@@ -1,13 +1,23 @@
-
+import React from "react";
 import "./KongNavMenu.css"
-// import arrowDiagonal from "../../../../img/sections/KongNav/diagonal-arrow.svg"
-const KongNavMenu = () => {
+const KongNavMenu = ({ isProductActive, setProductActive }) => {
+
     return (
-        <ul className="menu-container">
+        <ul className={`menu-container ${isProductActive ? "sub-nav-open" : "sub-nav-close"}`}>
+
             <div className="products-menu-option">
-                <li>
-                    <ul>
-                        <li>
+                <div className={`sub-nav-prod-header  `} onClick={() => {
+                    setProductActive(!isProductActive)
+
+                }}>
+                    <img src="img/sections/navigation/KongNav/down-arrow.svg" alt="" />
+                    <div>Products</div>
+                </div>
+                <li className="products-menu-option-1">
+
+                    <ul className="product-menu-item-1">
+
+                        <li >
                             <div className="menu-description">
                                 <a href="">Why Kong?</a>
                                 <p>Lorem ipsum dolor sit, amet <br /> consectetur adipisicing</p>

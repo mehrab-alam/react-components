@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    gap: 40px;
+    gap: 115px;
     background-color: #ffffff;
     top: 53px
 }
@@ -13,7 +13,7 @@
 
 .products-menu-option li {
     list-style: none;
-    background-color: #fff;
+
 }
 
 
