@@ -89,7 +89,7 @@ const KongNav = () => {
                     <button className="sub-demo-btn">Get a Demo</button>
                     <button className="sub-start-btn">Start for Free</button>
                 </div>
-                <div className={` ${isSubProduct ? "sub-nav-close" : "sub-nav-cont-close"}`}> <KongNavMenu isProductActive={isProductActive} setProductActive={setProductActive} />
+                <div className={`sub-nav-content ${isSubProduct ? "sub-nav-close" : "sub-nav-cont-close"}`}> <KongNavMenu isProductActive={isProductActive} setProductActive={setProductActive} />
                 </div>
 
             </ul>
