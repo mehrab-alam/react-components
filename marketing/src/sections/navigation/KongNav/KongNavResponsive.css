@@ -188,11 +188,11 @@
         color: #1154ca;
     }
 
-    .sub-nav-close {
+    .responsive-ul-links .sub-nav-close {
         display: block;
     }
 
-    .sub-nav-open {
+    .responsive-ul-links .sub-nav-open {
         display: none;
 
     }
