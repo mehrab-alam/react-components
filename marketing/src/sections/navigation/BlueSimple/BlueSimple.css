@@ -24,62 +24,62 @@
     color: black;
 }
 
-.features .features-title {
+.blue-simple-container .features .features-title {
     padding-bottom: 5px;
     transform-origin: left center;
     transition: .1s;
 
 }
 
-.features .features-menu-inactive {
+.blue-simple-container .features .features-menu-inactive {
     border-bottom: none;
 
 }
 
-.features .features-menu-active {
+.blue-simple-container .features .features-menu-active {
     border-bottom: 3px solid blue;
 }
 
-.features .feature-menu {
+.blue-simple-container .features .feature-menu {
     top: 22px;
     position: absolute;
     left: -128px;
 }
 
-.features .features-option {
+.blue-simple-container .features .features-option {
     margin-top: 20px;
     display: flex;
 }
 
 
-.features .features-option li {
+.blue-simple-container .features .features-option li {
     display: flex;
     align-items: flex-start;
 }
 
-.features .features-option li>div {
+.blue-simple-container .features .features-option li>div {
     font-weight: bold;
 }
 
-.features .features-option-item p {
+.blue-simple-container .features .features-option-item p {
     font-weight: normal;
     margin-top: 2px;
     color: #b6b6b7;
 }
 
-.features li {
+.blue-simple-container .features li {
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
     transition: .4s all;
 }
 
-.features li:hover {
+.blue-simple-container .features li:hover {
     background-color: #f0efef;
 }
 
 
-.features-option>ul {
+.blue-simple-container .features-option>ul {
     background-color: #ffffff;
     list-style: none;
     width: 500px;
@@ -93,7 +93,7 @@
     margin-bottom: 12px;
 }
 
-.features .typsetting-status {
+.blue-simple-container .features .typsetting-status {
     margin-left: 20px;
     border: 1px solid;
     padding: 2px 10px;
@@ -104,16 +104,16 @@
 }
 
 
-.features .features-option>ul:first-child {
+.blue-simple-container .features .features-option>ul:first-child {
     border-top-left-radius: 15px;
 }
 
-.features .features-option>ul:last-child {
+.blue-simple-container .features .features-option>ul:last-child {
     border-top-right-radius: 15px;
 }
 
 
-.features .feature-footer {
+.blue-simple-container .features .feature-footer {
     height: 100px;
     border: 2px solid #efefef;
     border-bottom-left-radius: 15px;
@@ -125,26 +125,26 @@
     background-color: #f9f9f9;
 }
 
-.features .demo-video {
+.blue-simple-container .features .demo-video {
     border: 2px solid #d5d5d5;
     border-radius: 25px;
     padding: 10px 15px;
     background-color: #ffff;
 }
 
-.features .demo-video:hover {
+.blue-simple-container .features .demo-video:hover {
     background-color: blue;
     color: wheat;
 }
 
-.features .ready-started>div:first-child {
+.blue-simple-container .features .ready-started>div:first-child {
     font-weight: bold;
 }
 
-.ready-started>div:last-child {
+.blue-simple-container .ready-started>div:last-child {
     color: gray;
 }
 
-.responsive-blue-simple {
+.blue-simple-container .responsive-blue-simple {
     display: none;
 }
