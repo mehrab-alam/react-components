@@ -23,7 +23,7 @@ const MiroNav = () => {
     }
     return (
         <div className={backGround()}>
-            <div className="container">
+            <div className="hero-nav">
                 <nav className={`miro-nav-container ${isHamburger ? "miro-nav-open" : "miro-nav-close"}`}>
                     <div className="miroNav-menu">
                         <div>

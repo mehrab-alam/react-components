@@ -15,7 +15,7 @@
     margin: 0 auto;
 }
 
-.container {
+.hero-nav {
     background-color: #ffffff;
     position: relative;
     border-bottom: 1px solid;
@@ -124,13 +124,12 @@
     transform: translateX(123px) scaleX(0.872656);
     position: absolute;
     left: 215px;
-
 }
 
 .mobile-nav-links {
     display: none;
 }
 
-.hamburger {
+.miro-nav-container .hamburger {
     display: none;
 }

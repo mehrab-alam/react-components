@@ -8,10 +8,10 @@ const MiroNavMenu = ({ isOpen }) => {
 
     return (
         <div className={`miro-nav-menu ${isOpen ? "miroNav-open" : "miroNav-close"}`}>
-            <div className="miroNavMenu-container">
+            <div className="miro-nav-container">
                 <div >
-                    <h2 className="phroduct-header">Product</h2>
-                    <div className="miroNavMenu-productOption">
+                    <h2 className="product-header">Product</h2>
+                    <div className="miro-nav-prod-opt">
                         {navLinksItems.map((t, i) => {
                             return (
                                 <>
@@ -25,9 +25,9 @@ const MiroNavMenu = ({ isOpen }) => {
                     </div>
 
                 </div>
-                <div className="miroNnav-menu-new-option">
+                <div className="miro-nav-menu-new-option">
                     <h2>What's new</h2>
-                    <div className="miroNnav-menu-new-option-content">
+                    <div className="miro-nav-menu-new-option-content">
                         <img src="" alt="" />
                         <div>
                             <a>New templates</a>
@@ -36,7 +36,7 @@ const MiroNavMenu = ({ isOpen }) => {
                             </p>
                         </div>
                     </div>
-                    <div className="miroNnav-menu-new-option-content">
+                    <div className="miro-nav-menu-new-option-content">
                         <img src="" alt="" />
                         <div>
                             <a>Sign in with Slack</a>
