@@ -2,11 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 import reportWebVitals from "./reportWebVitals";
+import MiroNav from "./sections/navigation/MiroNav/MiroNav";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-    <React.StrictMode> </React.StrictMode>
+    <React.StrictMode>
+        <MiroNav />
+    </React.StrictMode>
 );
 
 
