@@ -3,7 +3,7 @@ import "./KongNavMenu.css"
 const KongNavMenu = ({ isProductActive, setProductActive }) => {
 
     return (
-        <ul className={`menu-container ${isProductActive ? "sub-nav-open" : "sub-nav-close"}`}>
+        <ul className={`kong-menu-container ${isProductActive ? "sub-nav-open" : "sub-nav-close"}`}>
 
             <div className="products-menu-option">
                 <div className={`sub-nav-prod-header  `} onClick={() => {

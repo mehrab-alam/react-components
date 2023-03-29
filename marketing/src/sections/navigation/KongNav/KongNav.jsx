@@ -23,7 +23,7 @@ const KongNav = () => {
     }
 
     return (
-        <div className={bodyClassName()}>
+        <div className={`kong-hero-container ${bodyClassName()}`}>
             <div className="kongnav-container">
                 <nav className="kongnav">
                     <div >
@@ -67,7 +67,7 @@ const KongNav = () => {
                 </div>
             </nav>
             <ul className={`responsive-ul-links ${isHamburger ? "respo-ul-open" : "respo-ul-close"}`}>
-                <li className="kong-sub-link-list sub-list-1" onClick={() => {
+                <li className="kong-sub-link-list " onClick={() => {
                     if (isSubProduct) {
                         setProductActive(!isProductActive)
                     }
@@ -79,10 +79,10 @@ const KongNav = () => {
 
                 </li>
 
-                <li className="kong-sub-link-list sub-list-2">Solution</li>
-                <li className="kong-sub-link-list sub-list-3">Customers</li>
-                <li className="kong-sub-link-list sub-list-4">Resources</li>
-                <li className="kong-sub-link-list sub-list-5">Company</li>
+                <li className="kong-sub-link-list ">Solution</li>
+                <li className="kong-sub-link-list ">Customers</li>
+                <li className="kong-sub-link-list ">Resources</li>
+                <li className="kong-sub-link-list ">Company</li>
                 <hr />
                 <div className={`kong-sub-action-btn ${isHamburger ? "respo-ul-open" : "respo-ul-close"}`}  >
                     <a href="">Login</a>

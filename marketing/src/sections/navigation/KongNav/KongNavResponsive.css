@@ -1,11 +1,11 @@
 @media only screen and (max-width:414px) {
-    .menu-container ul {
+    .kong-hero-container .kong-menu-container ul {
         margin: 0;
         padding: 0;
     }
 
 
-    .kongnav-container {
+    .kong-hero-container .kongnav-container {
         display: none;
     }
 
@@ -13,7 +13,7 @@
         background-color: #ffffff;
     }
 
-    nav.responsive-kong-nav {
+    .kong-hero-container nav.responsive-kong-nav {
         background-color: #fff;
         display: flex;
         justify-content: space-between;
@@ -25,33 +25,34 @@
         z-index: 999;
     }
 
-    .hamburger .slice {
+    .kong-hero-container .responsive-kong-nav .hamburger .slice {
         height: 3px;
         background-color: black;
         width: 30px;
         transition: transform .5s ease-in;
     }
 
-    .hamburger .slice:not(:last-child) {
+    .kong-hero-container .responsive-kong-nav .hamburger .slice:not(:last-child) {
         margin-bottom: 5px;
     }
 
-    .hamburger-open .slice-1 {
+    .kong-hero-container .responsive-kong-nav .hamburger-open .slice-1 {
         transform: rotate(45deg) translate(5px);
 
     }
 
-    .hamburger-open .slice-2 {
+    .kong-hero-container .responsive-kong-nav .hamburger-open .slice-2 {
         opacity: 0;
         height: 0;
     }
 
-    .hamburger-open .slice-3 {
+    .kong-hero-container .responsive-kong-nav .hamburger-open .slice-3 {
         transform: rotate(-45deg) translate(5px);
 
     }
 
-    ul.responsive-ul-links {
+    .kong-hero-container ul.responsive-ul-links {
+        width: 400px;
         margin: 10px;
         padding: 20px 0px;
         list-style: none;
@@ -61,98 +62,88 @@
         z-index: -10;
     }
 
-    .respo-ul-open {
+    .kong-hero-container .respo-ul-open {
         transition: transform .5s ease-in;
         transform: translateY(0%);
         transform-origin: left center;
     }
 
-    .respo-ul-close {
+    .kong-hero-container .respo-ul-close {
         transition: transform .5s ease-in;
         transform: translateY(-140%);
         transform-origin: left center;
 
     }
 
-
-
-    ul.responsive-ul-links .kong-sub-link-list {
+    .kong-hero-container ul.responsive-ul-links .kong-sub-link-list {
         display: block;
         padding-bottom: 10px;
     }
 
-    ul.responsive-ul-links li.sub-list-1 {
+    .kong-hero-container ul.responsive-ul-links .kong-sub-link-list {
         display: flex;
-        gap: 288px;
-        align-items: center;
-
+        justify-content: space-between;
     }
 
-    ul.responsive-ul-links li.sub-list-1 img {
+    .kong-hero-container ul.responsive-ul-links li:first-child img {
         rotate: -90deg;
     }
 
-    ul.responsive-ul-links li.sub-list-2,
-    ul.responsive-ul-links li.sub-list-3,
-    ul.responsive-ul-links li.sub-list-4,
-    ul.responsive-ul-links li.sub-list-1 {
-        margin-bottom: 20px;
-    }
-
-    .menu-container .products-menu-option {
+    .kong-hero-container .kong-menu-container .products-menu-option {
         flex-direction: column;
-        position: relative;
-        gap: 0px;
+        position: absolute;
+        width: 115%;
+        gap: 15px;
         margin: 0;
-        top: -460px;
+        top: 0px;
+        left: 0;
     }
 
-    .menu-container .product-menu-item-1 {
+    .kong-hero-container .kong-menu-container .product-menu-item-1 {
         display: flex;
         flex-direction: column;
         gap: 24px;
     }
 
-    .menu-container div.menu-description ul {
+    .kong-hero-container .kong-menu-container div.menu-description ul {
         margin-left: 0;
-        gap: 10px;
+        gap: 15px;
         font-size: 0.8rem;
     }
 
-    .menu-container .sub-nav-content {
+    .kong-hero-container .kong-menu-container .sub-nav-content {
         display: contents;
     }
 
-    .menu-container .sub-nav-prod-header {
+    .kong-hero-container .kong-menu-container .sub-nav-prod-header {
         display: flex;
-
         background-color: #fff
     }
 
-    .menu-container .sub-nav-prod-header img {
+    .kong-hero-container .kong-menu-container .sub-nav-prod-header img {
         rotate: 90deg;
     }
 
-    .menu-container .products-menu-option ul {
+    .kong-hero-container .kong-menu-container .products-menu-option ul {
         margin: 10px;
     }
 
-    .menu-container .menu-description a,
+    .kong-hero-container .kong-menu-container .menu-description a,
     .menu-description p {
         font-size: 0.8rem;
     }
 
-    .menu-container {
+    .kong-hero-container .kong-menu-container {
         margin: 0;
         padding: 0;
         height: 400px;
     }
 
-    .menu-container .products-menu-option-1 {
+    .kong-hero-container .kong-menu-container .products-menu-option-1 {
         background-color: #f7f9fc;
     }
 
-    .responsive-ul-links .kong-sub-action-btn {
+    .kong-hero-container .responsive-ul-links .kong-sub-action-btn {
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -160,7 +151,7 @@
 
     }
 
-    .responsive-ul-links .kong-sub-action-btn button {
+    .kong-hero-container .responsive-ul-links .kong-sub-action-btn button {
         width: 350px;
         outline: none;
         height: 40px;
@@ -171,28 +162,28 @@
         border-radius: 5px;
     }
 
-    .responsive-ul-links .kong-sub-action-btn>a {
+    .kong-hero-container .responsive-ul-links .kong-sub-action-btn>a {
         font-weight: 400;
         text-decoration: none;
         font-size: 1.5rem;
     }
 
-    .responsive-ul-links .kong-sub-action-btn .sub-demo-btn {
+    .kong-hero-container .responsive-ul-links .kong-sub-action-btn .sub-demo-btn {
         background-color: #1154ca;
         color: #ffffff;
     }
 
-    .responsive-ul-links .kong-sub-action-btn .sub-start-btn {
+    .kong-hero-container .responsive-ul-links .kong-sub-action-btn .sub-start-btn {
         border: 2px solid #1154ca;
         background-color: #ffffff;
         color: #1154ca;
     }
 
-    .responsive-ul-links .sub-nav-close {
+    .kong-hero-container .responsive-ul-links .sub-nav-close {
         display: block;
     }
 
-    .responsive-ul-links .sub-nav-open {
+    .kong-hero-container .responsive-ul-links .sub-nav-open {
         display: none;
 
     }

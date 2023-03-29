@@ -1,4 +1,4 @@
-.products-menu-option {
+.kong-menu-container .products-menu-option {
     width: 100%;
     position: absolute;
     right: 0px;
@@ -11,67 +11,68 @@
 }
 
 
-.products-menu-option li {
+.kong-menu-container .products-menu-option li {
     list-style: none;
 
 }
 
 
-.products-menu-option ul {
+.kong-menu-container .products-menu-option ul {
     margin: 40px 0px;
 }
 
-div.menu-description {
-    margin-bottom: 20px;
+.kong-menu-container div.menu-description {
+    margin-bottom: 30px;
     font-size: 1rem;
 }
 
-div.menu-description p {
+.kong-menu-container div.menu-description p {
     margin-top: 10px;
     color: #a1a1a2;
 
 }
 
-div.menu-description a {
+.kong-menu-container div.menu-description a {
     text-decoration: none;
     color: blue;
     font-size: 1.2rem;
 }
 
-div.menu-description a:first-child {
+.kong-menu-container div.menu-description a:first-child {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
 
-div.menu-description ul {
+.kong-menu-container div.menu-description ul {
     display: flex;
+    align-items: center;
     gap: 20px;
     color: blue;
     margin-top: 0;
     margin-left: -40px;
 }
 
-.pipe {
+.kong-menu-container .pipe {
     color: black;
 }
 
-.kong-insomnia-mesh {
+.kong-menu-container .kong-insomnia-mesh {
     margin-top: -20px;
 }
 
-.menu-description>ul li {
+.kong-menu-container .menu-description>ul li {
     font-weight: bold;
 }
 
-.menu-description>ul li:hover {
+.kong-menu-container .menu-description>ul li:hover {
     color: #537085;
 }
 
-.products-menu-option a {
+.kong-menu-container .products-menu-option a {
     font-weight: bold;
 }
 
-.products-menu-option a:hover {
+.kong-menu-container .products-menu-option a:hover {
     color: #537085;
 }
