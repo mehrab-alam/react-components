@@ -1,6 +1,6 @@
 @media only screen and (max-width:415px) {
 
-    .miro-nav-container {
+    .miro-hero-container .miro-nav-container {
         align-items: center;
         border-bottom: 1px solid #cfcfcf;
         height: 70px;
@@ -8,34 +8,38 @@
         z-index: 5;
     }
 
-    .miro-nav-open {
+    .miro-hero-container .miro-nav-open {
         background-color: #ffd02f;
         border-bottom: 1px solid #ffffff;
         transform-origin: top;
         transition: .4s all;
     }
 
-    .miro-nav-close {
+    .miro-hero-container .miro-nav-close {
         background-color: #ffffff;
     }
 
-    .miro-nav-links li {
+    .miro-hero-container .miro-nav-links li {
         display: none;
     }
 
-    .action-links a:not(:last-child) {
+    .miro-hero-container .action-links a:not(:last-child) {
         display: none;
     }
 
-    .action-links {
+    .miro-hero-container .action-links {
         display: none;
     }
 
-    .miro-nav-container.action-links a:last-child {
+    .miro-hero-container .miro-nav-container.action-links a:last-child {
         padding-right: 10px;
     }
 
-    .hamburger .slice {
+    .miro-hero-container .miro-nav-container .hamburger {
+        display: block;
+    }
+
+    .miro-hero-container .hamburger .slice {
         width: 30px;
         height: 3px;
         background-color: black;
@@ -44,29 +48,29 @@
         transition: .2s ease-in;
     }
 
-    .isHamburger-close .slice {
+    .miro-hero-container .isHamburger-close .slice {
         background-color: black;
     }
 
-    .hamburger .slice:not(:last-child) {
+    .miro-hero-container .hamburger .slice:not(:last-child) {
         margin-bottom: 5px;
     }
 
-    .isHamburger-open .slice-2 {
+    .miro-hero-container .isHamburger-open .slice-2 {
         opacity: 0;
         height: 0;
     }
 
-    .isHamburger-open .slice-1 {
+    .miro-hero-container .isHamburger-open .slice-1 {
         transform: rotate(45deg) translate(5px);
     }
 
 
-    .isHamburger-open .slice-3 {
+    .miro-hero-container .isHamburger-open .slice-3 {
         transform: rotate(-45deg) translate(5px);
     }
 
-    .mobile-nav-links {
+    .miro-hero-container .mobile-nav-links {
         visibility: visible;
         display: flex;
         flex-direction: column;
@@ -79,57 +83,57 @@
         transition: transform .5s ease-in;
     }
 
-    .mobile-nav-links a {
+    .miro-hero-container .mobile-nav-links a {
         text-decoration: none;
         font-size: 1.3rem;
         color: black;
     }
 
-    .nav-links-close {
+    .miro-hero-container .nav-links-close {
         transform: translateY(-140%);
         transform-origin: top;
 
     }
 
-    .nav-links-open {
+    .miro-hero-container .nav-links-open {
         transform: translateY(0);
         transform-origin: top;
         background-color: #eee;
         transition: .4s ease-in;
     }
 
-    .mobile-nav-links .mobile-nav-links span {
+    .miro-hero-container .mobile-nav-links .mobile-nav-links span {
         display: flex;
         justify-content: space-between;
         align-items: center;
         color: black;
     }
 
-    .mobile-nav-links .children-trigger h4 {
+    .miro-hero-container .mobile-nav-links .children-trigger h4 {
         padding: 0 20px;
         color: black;
     }
 
-    .mobile-nav-links .children-trigger-links>div {
+    .miro-hero-container .mobile-nav-links .children-trigger-links>div {
         padding: 0 20px;
     }
 
-    .mobile-nav-links .children-trigger-links>div:last-child {
+    .miro-hero-container .mobile-nav-links .children-trigger-links>div:last-child {
         margin-bottom: 20px;
         font-size: 1rem;
         color: black;
         padding-bottom: 10px;
     }
 
-    .children-trigger-links>div:first-child {
+    .miro-hero-container .children-trigger-links>div:first-child {
         font-size: 1.3rem;
     }
 
-    .mobile-nav-links .trigger-open .product-child-nav-arrow {
+    .miro-hero-container .mobile-nav-links .trigger-open .product-child-nav-arrow {
         transform: rotate(-180deg);
     }
 
-    .mobile-nav-links .children-trigger-open {
+    .miro-hero-container .mobile-nav-links .children-trigger-open {
         transform: translateY(0);
         transform-origin: bottom;
     }
