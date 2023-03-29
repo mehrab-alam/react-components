@@ -1,4 +1,5 @@
 import React from "react";
+import { productMenuContent1, productMenuContent2, productMenuContent3 } from "./KongNav";
 import "./KongNavMenu.css"
 const KongNavMenu = ({ isProductActive, setProductActive }) => {
 
@@ -18,82 +19,66 @@ const KongNavMenu = ({ isProductActive, setProductActive }) => {
                     <ul className="product-menu-item-1">
 
                         <li >
-                            <div className="menu-description">
-                                <a href="">Why Kong?</a>
-                                <p>Lorem ipsum dolor sit, amet <br /> consectetur adipisicing</p>
-                                <a href="">Learn more <span>&nbsp;&rarr;</span></a>
-                            </div>
+                            {productMenuContent1.map((c, i) => {
+                                return (
+                                    <>
+                                        <div key={i} className="menu-description">
+                                            <a href="">{c.title}</a>
+                                            <p>{c.description}</p>
+                                            <a href="">{c.link}<span>&nbsp;&rarr;</span></a>
+                                        </div>
+                                    </>
+                                )
+                            })}
                         </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <ul className="product-menu-item-1">
                         <li>
-                            <div className="menu-description">
-                                <a href="">Products Updates</a>
-                                <p>Lorem ipsum dolor sit, amet <br /> consectetur adipisicing</p>
-                                <a href="">Learn more <span>&nbsp;&rarr;</span></a>
-                            </div>
+                            {productMenuContent2.map((c, i) => {
+                                return (
+                                    <>
+                                        <div key={i} className="menu-description kong-insomnia-mesh">
+                                            <a href="">{c.title} </a>
+                                            <p>{c.description}</p>
+                                            <ul>
+                                                <li>{c.l1}</li>
+                                                <div className="pipe">|</div>
+                                                <li>{c.l2}</li>
+                                                <div className="pipe">|</div>
+                                                <li>{c.l3} </li>
+                                                <div className="pipe">|</div>
+                                                <li>{c.l4} </li>
+                                            </ul>
+                                        </div >
+                                    </>
+                                )
+                            })}
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <ul>
+                    <ul className="product-menu-item-1">
                         <li>
-                            <div className="menu-description">
-                                <a href="">King Konnect</a>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
-                                <ul>
-                                    <li>Overview</li>
-                                    <div className="pipe">|</div>
-                                    <li>Docs</li>
-                                    <div className="pipe">|</div>
-                                    <li>Plugin Hub</li>
-                                    <div className="pipe">|</div>
-                                    <li>Pricing</li>
-                                </ul>
-                            </div >
-                        </li>
-                        <li>
-                            <div className="menu-description kong-insomnia-mesh">
-                                <a href="">Kong Mesh</a>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
-                                <ul>
-                                    <li>Overview</li>
-                                    <div className="pipe">|</div>
-                                    <li>Docs</li>
-                                    <div className="pipe" >|</div>
-                                    <li>Zero Trust Security</li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li>
-                            <div className="menu-description">
-                                <a href="">Kong Enterprise</a>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
-                                <ul>
-                                    <li>Overview</li>
-                                    <div className="pipe">|</div>
-                                    <li>Docs</li>
-                                    <div className="pipe">|</div>
-                                    <li>Plugin Hub</li>
-                                </ul>
-                            </div>
-                            <div className="menu-description kong-insomnia-mesh">
-                                <a href="">Kong Insomnia</a>
-                                <p>Lorem ipsum dolor sit, amet consectetur <br /> adipisicing
-                                </p>
-                                <ul className="kong-insomania">
-                                    <li>Overview
-                                    </li>
-                                    <div className="pipe">|</div>
-                                    <li>Docs
-                                    </li>
-                                    <div className="pipe">|</div>
-                                    <li>Plugin
-                                    </li>
-                                </ul>
-                            </div>
+                            {productMenuContent3.map((c, i) => {
+                                return (
+                                    <>
+                                        <div key={i} className="menu-description kong-insomnia-mesh">
+                                            <a href="">{c.title} </a>
+                                            <p>{c.description}</p>
+                                            <ul>
+                                                <li>{c.l1}</li>
+                                                <div className="pipe">|</div>
+                                                <li>{c.l2} </li>
+                                                <div className="pipe">|</div>
+                                                <li>{c.l3} </li>
+                                            </ul>
+                                        </div>
+                                    </>
+                                )
+                            })}
                         </li>
                     </ul>
                 </li>

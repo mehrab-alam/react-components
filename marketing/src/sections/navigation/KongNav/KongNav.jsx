@@ -28,7 +28,7 @@ const KongNav = () => {
                 <nav className="kongnav">
                     <div >
                         <a href="" className="kong-logo"><img src="/img/sections/navigation/KongNav/kong-logo.svg" alt="" /></a>
-                        <ul className="kongnav-menu">
+                        <ul className="kongnav-menu-item">
                             <li>
                                 <div onClick={(e) => {
                                     e.preventDefault();
@@ -39,10 +39,10 @@ const KongNav = () => {
                                     {isOpen && (<KongNavMenu />)}
                                 </div>
                             </li>
-                            <li className="kongnav-menu-2">Solution</li>
-                            <li className="kongnav-menu-2">Customers</li>
-                            <li className="kongnav-menu-2">Resources</li>
-                            <li className="kongnav-menu-2">Company</li>
+                            <li className="kongnav-menu-item-2">Solution</li>
+                            <li className="kongnav-menu-item-2">Customers</li>
+                            <li className="kongnav-menu-item-2">Resources</li>
+                            <li className="kongnav-menu-item-2">Company</li>
                         </ul>
                     </div>
                     <div className="kongnav-link">
