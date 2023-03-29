@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import BlueSimple from "./sections/navigation/BlueSimple/BlueSimple";
+
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
