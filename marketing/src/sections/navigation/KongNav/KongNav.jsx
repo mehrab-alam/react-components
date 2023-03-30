@@ -51,7 +51,6 @@ const KongNav = () => {
                         <button className="startBtn">Start for Free</button>
                     </div>
                 </nav>
-                <hr />
             </div>
             <nav className="responsive-kong-nav">
                 <img src="img/sections/navigation/KongNav/kong-logo.svg" alt="" />
