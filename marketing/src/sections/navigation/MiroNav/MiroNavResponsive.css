@@ -9,7 +9,7 @@
     }
 
     .miro-hero-container .miro-nav-open {
-        background-color: #ffd02f;
+        background-color: #ffffff;
         border-bottom: 1px solid #ffffff;
         transform-origin: top;
         transition: .4s all;
@@ -187,7 +187,7 @@
     }
 
     .nav-links-open .sub-product-open {
-        color: #ffd02f;
+        color: black;
     }
 
     .mobile-nav-links .sub-nav-links {

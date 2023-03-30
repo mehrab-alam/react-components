@@ -31,7 +31,7 @@ const MiroNavMenu = ({ isOpen }) => {
                         return (
 
                             <div key={i} className="miro-nav-menu-new-option-content">
-                                <img src="" alt="" />
+                                <div></div>
                                 <div>
                                     <a>{t.title}</a>
                                     <p>

@@ -78,13 +78,13 @@
     gap: 40px;
 }
 
-.miro-nav-menu .miro-nav-menu-new-option-content img {
+.miro-nav-menu .miro-nav-menu-new-option-content>div:first-child {
     height: 75px;
     width: 200px;
     outline: none;
     border: none;
     border-radius: 15px;
-    background-color: #eee;
+    background-color: #cfcccc;
 }
 
 .miro-nav-menu .miro-nav-menu-new-option-content a {

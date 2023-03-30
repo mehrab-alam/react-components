@@ -18,7 +18,7 @@
 .miro-hero-container .hero-nav {
     background-color: #ffffff;
     position: relative;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 .miro-hero-container .miro-nav-container a {
