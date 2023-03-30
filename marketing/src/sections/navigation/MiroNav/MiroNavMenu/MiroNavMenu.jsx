@@ -14,12 +14,12 @@ const MiroNavMenu = ({ isOpen }) => {
                     <div className="miro-nav-prod-opt">
                         {navLinksItems.map((t, i) => {
                             return (
-                                <>
-                                    <div key={i}>
-                                        <a>{t.sublink}</a>
-                                        <p>{t.description}</p>
-                                    </div>
-                                </>
+
+                                <div key={i}>
+                                    <a>{t.sublink}</a>
+                                    <p>{t.description}</p>
+                                </div>
+
                             )
                         })}
                     </div>
@@ -29,17 +29,17 @@ const MiroNavMenu = ({ isOpen }) => {
                     <h2>What's new</h2>
                     {whatsNewItem.map((t, i) => {
                         return (
-                            <>
-                                <div key={i} className="miro-nav-menu-new-option-content">
-                                    <img src="" alt="" />
-                                    <div>
-                                        <a>{t.title}</a>
-                                        <p>
-                                            {t.description}
-                                        </p>
-                                    </div>
+
+                            <div key={i} className="miro-nav-menu-new-option-content">
+                                <img src="" alt="" />
+                                <div>
+                                    <a>{t.title}</a>
+                                    <p>
+                                        {t.description}
+                                    </p>
                                 </div>
-                            </>
+                            </div>
+
                         )
                     })}
 

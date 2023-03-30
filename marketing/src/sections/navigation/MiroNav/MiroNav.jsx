@@ -78,12 +78,12 @@ const MiroNav = () => {
                         <h4>Product</h4>
                         {navLinksItems.map((t, i) => {
                             return (
-                                <>
-                                    <a className="children-trigger-links" href="" key={i}>
-                                        <div >{t.sublink}</div>
-                                        <div>{t.description}</div>
-                                    </a>
-                                </>
+
+                                <a className="children-trigger-links" href="" key={i}>
+                                    <div >{t.sublink}</div>
+                                    <div>{t.description}</div>
+                                </a>
+
                             )
                         })}
                     </div>
