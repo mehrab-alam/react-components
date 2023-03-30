@@ -3,7 +3,7 @@ import "./MiroNav.css"
 import MiroNavMenu from "./MiroNavMenu/MiroNavMenu"
 import React from "react"
 import "./MiroNavResponsive.css"
-import navLinksItems from "./MiroNavItems"
+import { navLinksItems } from "./MiroNavItems"
 
 
 
@@ -33,7 +33,7 @@ const MiroNav = () => {
                                     setOpen(!isOpen)
                                 }}><span className={`miroNav-product-menu ${isOpen ? "product-open" : "product-close"}`}>
                                         <a>Product</a>
-                                        <img className={isOpen ? "open" : "close"} src="img/sections/navigation/MiroNav/arrow.svg" alt="" />
+                                        <img className={isOpen ? "product-menu-open" : "product-menu-close"} src="img/sections/navigation/MiroNav/arrow.svg" alt="" />
                                     </span>
                                     <MiroNavMenu isOpen={isOpen} />
                                 </li>

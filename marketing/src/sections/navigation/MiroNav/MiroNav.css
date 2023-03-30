@@ -78,12 +78,12 @@
     color: #4262ff;
 }
 
-.miro-hero-container .miro-nav-container .close {
+.miro-hero-container .miro-nav-container .product-menu-close {
     transform: rotate(0deg);
     transition: .4s;
 }
 
-.miro-hero-container .miro-nav-container .open {
+.miro-hero-container .miro-nav-container .product-menu-open {
     transition: .4s;
     transform: rotate(-180deg);
 }

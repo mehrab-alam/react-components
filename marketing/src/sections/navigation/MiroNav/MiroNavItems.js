@@ -29,4 +29,18 @@ const navLinksItems = [
         description: "Lorem ipsum dolor sit amet."
     }
 ]
-export default navLinksItems;
+
+const whatsNewItem = [
+    {
+        img: "",
+        title: "New templates",
+        description: " Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+        img: "",
+        title: "Sign in with Slack",
+        description: " Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+]
+
+export { navLinksItems, whatsNewItem };

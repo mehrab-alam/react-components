@@ -1,5 +1,5 @@
 import "./MiroNavMenu.css"
-import navLinksItems from "../MiroNavItems"
+import { navLinksItems, whatsNewItem } from "../MiroNavItems"
 
 
 
@@ -27,24 +27,22 @@ const MiroNavMenu = ({ isOpen }) => {
                 </div>
                 <div className="miro-nav-menu-new-option">
                     <h2>What's new</h2>
-                    <div className="miro-nav-menu-new-option-content">
-                        <img src="" alt="" />
-                        <div>
-                            <a>New templates</a>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="miro-nav-menu-new-option-content">
-                        <img src="" alt="" />
-                        <div>
-                            <a>Sign in with Slack</a>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur  adipisicing elit.
-                            </p>
-                        </div>
-                    </div>
+                    {whatsNewItem.map((t, i) => {
+                        return (
+                            <>
+                                <div key={i} className="miro-nav-menu-new-option-content">
+                                    <img src="" alt="" />
+                                    <div>
+                                        <a>{t.title}</a>
+                                        <p>
+                                            {t.description}
+                                        </p>
+                                    </div>
+                                </div>
+                            </>
+                        )
+                    })}
+
                     <a className="see-change">See changelog </a><span className="right-arrow">&rarr;</span>
                 </div>
             </div>
