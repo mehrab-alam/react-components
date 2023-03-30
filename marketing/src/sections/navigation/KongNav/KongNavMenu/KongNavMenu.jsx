@@ -21,13 +21,13 @@ const KongNavMenu = ({ isProductActive, setProductActive }) => {
                         <li >
                             {productMenuContent1.map((c, i) => {
                                 return (
-                                    <>
-                                        <div key={i} className="menu-description">
-                                            <a href="">{c.title}</a>
-                                            <p>{c.description}</p>
-                                            <a href="">{c.link}<span>&nbsp;&rarr;</span></a>
-                                        </div>
-                                    </>
+
+                                    <div key={i} className="menu-description">
+                                        <a href="">{c.title}</a>
+                                        <p>{c.description}</p>
+                                        <a href="">{c.link}<span>&nbsp;&rarr;</span></a>
+                                    </div>
+
                                 )
                             })}
                         </li>
@@ -39,21 +39,21 @@ const KongNavMenu = ({ isProductActive, setProductActive }) => {
                         <li>
                             {productMenuContent2.map((c, i) => {
                                 return (
-                                    <>
-                                        <div key={i} className="menu-description kong-insomnia-mesh">
-                                            <a href="">{c.title} </a>
-                                            <p>{c.description}</p>
-                                            <ul>
-                                                <li>{c.l1}</li>
-                                                <div className="pipe">|</div>
-                                                <li>{c.l2}</li>
-                                                <div className="pipe">|</div>
-                                                <li>{c.l3} </li>
-                                                <div className="pipe">|</div>
-                                                <li>{c.l4} </li>
-                                            </ul>
-                                        </div >
-                                    </>
+
+                                    <div key={i} className="menu-description kong-insomnia-mesh">
+                                        <a href="">{c.title} </a>
+                                        <p>{c.description}</p>
+                                        <ul>
+                                            <li>{c.l1}</li>
+                                            <div className="pipe">|</div>
+                                            <li>{c.l2}</li>
+                                            <div className="pipe">|</div>
+                                            <li>{c.l3} </li>
+                                            <div className="pipe">|</div>
+                                            <li>{c.l4} </li>
+                                        </ul>
+                                    </div >
+
                                 )
                             })}
                         </li>
@@ -64,19 +64,19 @@ const KongNavMenu = ({ isProductActive, setProductActive }) => {
                         <li>
                             {productMenuContent3.map((c, i) => {
                                 return (
-                                    <>
-                                        <div key={i} className="menu-description kong-insomnia-mesh">
-                                            <a href="">{c.title} </a>
-                                            <p>{c.description}</p>
-                                            <ul>
-                                                <li>{c.l1}</li>
-                                                <div className="pipe">|</div>
-                                                <li>{c.l2} </li>
-                                                <div className="pipe">|</div>
-                                                <li>{c.l3} </li>
-                                            </ul>
-                                        </div>
-                                    </>
+
+                                    <div key={i} className="menu-description kong-insomnia-mesh">
+                                        <a href="">{c.title} </a>
+                                        <p>{c.description}</p>
+                                        <ul>
+                                            <li>{c.l1}</li>
+                                            <div className="pipe">|</div>
+                                            <li>{c.l2} </li>
+                                            <div className="pipe">|</div>
+                                            <li>{c.l3} </li>
+                                        </ul>
+                                    </div>
+
                                 )
                             })}
                         </li>
