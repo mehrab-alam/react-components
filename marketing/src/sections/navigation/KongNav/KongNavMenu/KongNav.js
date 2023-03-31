@@ -40,6 +40,7 @@ const productMenuContent3 = [
         l3: "Plugin Hub",
 
     }, {
+        img: "img/sections/navigation/KongNav/arrow-square.svg",
         title: "Kong Insomania",
         description: "Lorem ipsum dolor sit, amet  consectetur adipisicing",
         l1: "Overview",

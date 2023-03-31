@@ -23,7 +23,7 @@ const KongNav = () => {
     }
 
     return (
-        <div className={`kong-hero-container ${bodyClassName()}`}>
+        <div className={`kong-hero-container ${bodyClassName()}`} >
             <div className="kongnav-container">
                 <nav className="kongnav">
                     <div >
@@ -34,7 +34,7 @@ const KongNav = () => {
                                     e.preventDefault();
                                     setOpen(!isOpen)
                                 }}>
-                                    <a> <div className="product-menu">
+                                    <a className="product-option"> <div className={`product-menu ${isOpen ? "prod-open" : "prod-close"}`}>
                                         Products</div> <img className={isOpen ? "open" : "close"} src="/img/sections/navigation/KongNav/down-arrow.svg" alt="" /></a>
                                     {isOpen && (<KongNavMenu />)}
                                 </div>

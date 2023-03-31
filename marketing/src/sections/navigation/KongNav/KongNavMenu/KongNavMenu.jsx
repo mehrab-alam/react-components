@@ -36,12 +36,12 @@ const KongNavMenu = ({ isProductActive, setProductActive }) => {
                 </li>
                 <li>
                     <ul className="product-menu-item-1">
-                        <li>
+                        <li className="product-menu-option-2">
                             {productMenuContent2.map((c, i) => {
                                 return (
 
                                     <div key={i} className="menu-description kong-insomnia-mesh">
-                                        <a href="">{c.title} </a>
+                                        <a href="">{c.title}  </a>
                                         <p>{c.description}</p>
                                         <ul>
                                             <li>{c.l1}</li>
@@ -61,19 +61,19 @@ const KongNavMenu = ({ isProductActive, setProductActive }) => {
                 </li>
                 <li>
                     <ul className="product-menu-item-1">
-                        <li>
+                        <li className="product-menu-option-3">
                             {productMenuContent3.map((c, i) => {
                                 return (
 
                                     <div key={i} className="menu-description kong-insomnia-mesh">
-                                        <a href="">{c.title} </a>
+                                        <a href="">{c.title} <span className="insomania-img"><img src={c.img} alt="" /></span> </a>
                                         <p>{c.description}</p>
                                         <ul>
-                                            <li>{c.l1}</li>
+                                            <li>{c.l1} <span className="insomania-img"><img src={c.img} alt="" /></span></li>
                                             <div className="pipe">|</div>
-                                            <li>{c.l2} </li>
+                                            <li>{c.l2} <span className="insomania-img"><img src={c.img} alt="" /></span></li>
                                             <div className="pipe">|</div>
-                                            <li>{c.l3} </li>
+                                            <li>{c.l3} <span className="insomania-img"><img src={c.img} alt="" /></span> </li>
                                         </ul>
                                     </div>
 

@@ -51,6 +51,7 @@
 
     }
 
+
     .kong-hero-container ul.responsive-ul-links {
         width: 400px;
         margin: 10px;
@@ -87,6 +88,7 @@
 
     .kong-hero-container ul.responsive-ul-links li:first-child img {
         rotate: -90deg;
+        height: 15px;
     }
 
     .kong-hero-container .kong-menu-container .products-menu-option {
@@ -95,8 +97,8 @@
         position: absolute;
         gap: 15px;
         margin: 0;
-        top: 0px;
-        left: 0;
+        top: -70px;
+        left: -7px;
     }
 
     .kong-hero-container .kong-menu-container .product-menu-item-1 {

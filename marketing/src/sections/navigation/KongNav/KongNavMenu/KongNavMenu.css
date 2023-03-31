@@ -1,21 +1,41 @@
-.kong-menu-container .products-menu-option {
-    width: 100%;
+.kong-menu-container {
     position: absolute;
     right: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    gap: 40px;
-    background-color: #ffffff;
-    top: 44px
+    left: 0px;
+    margin: 0;
+    padding: 0px;
+    background-color: #f7f9fc;
+    top: 61px;
+    border: 1px solid #eee;
+    font-family: sans-serif;
 }
 
+
+.kong-menu-container .products-menu-option {
+    max-width: 1200px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-left: 22rem;
+    padding-left: 0px;
+    padding-right: 363px;
+
+}
 
 .kong-menu-container .products-menu-option li {
     list-style: none;
 }
 
+.kong-menu-container .products-menu-option-1 {
+    background-color: #f7f9fc;
+    padding-right: 5px;
+}
+
+.kong-menu-container .product-menu-option-3 {
+    margin-top: 40px;
+}
 
 .kong-menu-container .products-menu-option ul {
     margin: 40px 0px;
@@ -34,21 +54,31 @@
 
 .kong-menu-container div.menu-description a {
     text-decoration: none;
-    color: blue;
+    color: #1155cb;
     font-size: 1.2rem;
+}
+
+.kong-menu-container div.menu-description a:hover {
+    color: #062f4d;
+    font-weight: 600;
 }
 
 .kong-menu-container div.menu-description a:first-child {
     text-decoration: none;
-    color: black;
+    color: #35363a;
+    font-size: 1rem;
     font-weight: bold;
+}
+
+.kong-menu-container div.menu-description a:first-child:hover {
+    color: #0d4e7f;
 }
 
 .kong-menu-container div.menu-description ul {
     display: flex;
     align-items: center;
-    gap: 20px;
-    color: blue;
+    gap: 10px;
+    color: #1155cb;
     margin-top: 0;
     margin-left: -40px;
 }
@@ -61,16 +91,26 @@
     margin-top: -20px;
 }
 
+.kong-menu-container .kong-insomnia-mesh a,
+.kong-menu-container .kong-insomnia-mesh li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
 .kong-menu-container .menu-description>ul li {
-    font-weight: bold;
+    font-weight: 200;
+
 }
 
 .kong-menu-container .menu-description>ul li:hover {
-    color: #537085;
+    font-weight: 400;
+    color: #062f4d;
 }
 
 .kong-menu-container .products-menu-option a {
-    font-weight: bold;
+    font-weight: 200;
 }
 
 .kong-menu-container .products-menu-option a:hover {
