@@ -89,8 +89,12 @@
     gap: 5px;
 }
 
-.miro-hero-container .miro-nav-container .globe-EN img:hover {
-    color: #4262ff;
+.miro-hero-container .miro-nav-container .globe-EN img {
+    height: 30px;
+}
+
+.miro-hero-container .miro-nav-container .globe-EN div {
+    padding-top: 2px;
 }
 
 .miro-hero-container .miro-nav-container .product-menu-close {
