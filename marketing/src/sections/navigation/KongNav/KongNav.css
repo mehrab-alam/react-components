@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-
+    font-family: sans-serif;
 }
 
 .kong-hero-container .kongnav-container {
@@ -27,8 +27,9 @@
     display: flex;
     align-items: center;
     gap: 40px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     cursor: pointer;
+    font-weight: normal;
 }
 
 .kong-hero-container .kongnav-container .kongnav .product-option {
@@ -69,6 +70,7 @@
 .kong-hero-container .kongnav-container .kongnav .kongnav-menu-item>li:first-child a {
     display: flex;
     align-items: center;
+    gap: 5px;
 }
 
 .kong-hero-container .kongnav-container .kongnav .kongnav-link {
@@ -79,14 +81,14 @@
 }
 
 .kong-hero-container .kongnav-container .kongnav .kongnav-link a {
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-decoration: none;
 }
 
 .kong-hero-container .kongnav-container .kongnav .kongnav-link button {
-    font-size: 1.2rem;
-    padding: 10px 15px;
-    border-radius: 8px;
+    font-size: 1rem;
+    padding: 12px 10px;
+    border-radius: 5px;
 }
 
 .kong-hero-container .kongnav-container .kongnav .open {
@@ -94,7 +96,7 @@
 }
 
 .kong-hero-container .kongnav-container .kongnav .demoBtn {
-    background-color: #1155cb;
+    background: linear-gradient(180deg, #1155cb 0, #1155cb 100%);
     color: #ffffff;
     border: 1px solid #1155cb;
     transition: .4s all;
