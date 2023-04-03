@@ -104,7 +104,7 @@
 }
 
 .kong-hero-container .kongnav-container .kongnav .demoBtn:hover {
-    background-image: linear-gradient(to left, #31056d, #1414ee);
+    background: linear-gradient(90deg, #1155cb 0, #0e44a2 52.08%, #0a337a 94.79%);
     transform: translateX(1);
 }
 
@@ -131,7 +131,8 @@
 }
 
 .kong-hero-container .kongnav-container .kongnav .startBtn:hover {
-    background-image: linear-gradient(to left, #31056d, #1414ee);
+    background: linear-gradient(90deg, #1155cb 0, #0e44a2 52.08%, #0a337a 94.79%);
+
     color: white;
     transform: translateX(1);
 }
