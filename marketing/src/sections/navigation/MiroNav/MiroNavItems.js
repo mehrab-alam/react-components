@@ -16,10 +16,7 @@ const navLinksItems = [
         sublink: "Miro for Devices",
         description: "Lorem ipsum dolor sit amet."
     }
-    , {
-        sublink: "Whiteboard",
-        description: "Lorem ipsum dolor sit amet."
-    }
+
     , {
         sublink: "Templates",
         description: "Lorem ipsum dolor sit amet."

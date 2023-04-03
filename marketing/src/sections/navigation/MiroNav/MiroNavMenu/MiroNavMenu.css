@@ -4,7 +4,7 @@
     left: -250px;
     transform: scaleY(0);
     transform-origin: top center;
-    top: 59px;
+    top: 81px;
     transition: .4s all ease-in-out;
     z-index: 10;
     background-color: white;
@@ -13,6 +13,10 @@
 
 .miroNav-open {
     transform: scaleY(1);
+}
+
+.miro-nav-menu .product-description-list {
+    margin-bottom: 40px;
 }
 
 .miro-nav-menu .miro-nav-container {
@@ -25,7 +29,7 @@
 }
 
 .miro-nav-menu hr {
-    height: 1.5px;
+    height: 1px;
     background-color: #e9e7e7;
     border: none;
 }
@@ -42,6 +46,8 @@
     grid-template-columns: repeat(4, 1fr);
     column-gap: 20px;
     row-gap: 10px;
+    place-items: center;
+    margin-bottom: 40px;
 }
 
 .miro-nav-menu .miro-nav-prod-opt>div {

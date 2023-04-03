@@ -9,7 +9,7 @@ const MiroNavMenu = ({ isOpen }) => {
     return (
         <div className={`miro-nav-menu ${isOpen ? "miroNav-open" : "miroNav-close"}`}>
             <div className="miro-nav-container">
-                <div >
+                <div className="product-description-list" >
                     <h2 className="product-header">Product</h2>
                     <div className="miro-nav-prod-opt">
                         {navLinksItems.map((t, i) => {

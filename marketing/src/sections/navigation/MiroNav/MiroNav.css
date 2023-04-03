@@ -1,18 +1,24 @@
 .bright-bg {
     background-color: #ffffff;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .dull-bg {
     background-color: #f3f3f3;
     margin: 0;
+    overflow-x: hidden;
+
 }
 
 .miro-hero-container .miro-nav-container {
     display: flex;
     justify-content: space-between;
     max-width: 1420px;
+    align-items: center;
     margin: 0 auto;
+    font-family: sans-serif;
+    height: 80px;
 }
 
 .miro-hero-container .hero-nav {
@@ -36,6 +42,10 @@
 .miro-hero-container .miro-nav-container .miroNav-product-menu {
     display: flex;
     align-items: center;
+}
+
+.miro-hero-container .product-open {
+    color: #4262ff;
 }
 
 .miro-nav-container .miroNav-menu ul {
@@ -64,8 +74,13 @@
     gap: 20px;
 }
 
-.miro-hero-container .miro-nav-container .action-links a {
+.miro-hero-container .miro-nav-container .action-links a:not(:last-child) {
     font-size: 1.2rem;
+    color: black;
+}
+
+.miro-hero-container .miro-nav-container .action-links a:not(:last-child):hover {
+    color: blue;
 }
 
 .miro-hero-container .miro-nav-container .globe-EN {
@@ -101,7 +116,7 @@
 .miro-nav-container .signUp {
     border-radius: 25px;
     background-color: #4262ff;
-    padding: 10px 20px;
+    padding: 15px 20px;
     color: white;
 }
 
@@ -124,6 +139,7 @@
     transform: translateX(123px) scaleX(0.872656);
     position: absolute;
     left: 215px;
+    margin-top: 9px;
 }
 
 .miro-hero-container .mobile-nav-links {
