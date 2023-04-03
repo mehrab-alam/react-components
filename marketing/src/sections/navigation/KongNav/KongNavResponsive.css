@@ -20,7 +20,7 @@
         align-items: center;
         padding: 10px;
         height: 30px;
-        border-bottom: 1px solid;
+        border-bottom: 1px solid #dce5f2;
         position: relative;
         z-index: 999;
     }
@@ -120,7 +120,10 @@
 
     .kong-hero-container .kong-menu-container .sub-nav-prod-header {
         display: flex;
-        background-color: #fff
+        background-color: #fff;
+        border-bottom: 2px solid #dce4f3;
+        width: 100%;
+        padding: 15px 0px;
     }
 
     .kong-hero-container .kong-menu-container .sub-nav-prod-header img {
@@ -144,6 +147,7 @@
 
     .kong-hero-container .kong-menu-container .products-menu-option-1 {
         background-color: #f7f9fc;
+        margin-top: -14px;
     }
 
     .kong-hero-container .responsive-ul-links .kong-sub-action-btn {

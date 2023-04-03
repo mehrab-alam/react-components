@@ -84,8 +84,8 @@
 }
 
 .kong-hero-container .kongnav-container .kongnav .kongnav-link button {
-    font-size: 0.8rem;
-    padding: 15px 25px;
+    font-size: 1.2rem;
+    padding: 10px 15px;
     border-radius: 8px;
 }
 
@@ -119,12 +119,12 @@
 }
 
 .kong-hero-container .kongnav-container .kongnav .kongnav-link a {
-    font-weight: bold;
     color: #587488;
 }
 
 .kong-hero-container .kongnav-container .kongnav .kongnav-link a:hover {
     color: #062f4d;
+    font-weight: bold;
 
 }
 
