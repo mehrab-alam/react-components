@@ -1,0 +1,97 @@
+@media only screen and (max-width:414px) {
+    .blue-simple-container .blue-simple {
+        display: none;
+    }
+
+    .blue-simple-container {
+        width: 100%;
+        padding: 10px;
+        height: 50px;
+    }
+
+    .blue-simple-container .responsive-blue-simple {
+        display: block;
+    }
+
+
+    .blue-simple-container .responsive-blue-simple-nav .hamburger .slice {
+        background-color: black;
+        height: 3px;
+        width: 30px;
+    }
+
+
+    .blue-simple-container .responsive-blue-simple-nav .hamburger .slice:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    .blue-simple-container .responsive-blue-simple-nav .hamburger-open .slice-1 {
+        transform: rotate(45deg) translate(8px);
+        transition: transform .5s ease-in;
+
+
+    }
+
+    .blue-simple-container .responsive-blue-simple .responsive-blue-simple-nav .hamburger-open .slice-2 {
+        opacity: 0;
+        height: 0;
+    }
+
+    .blue-simple-container .responsive-blue-simple-nav .hamburger-open .slice-3 {
+        transform: rotate(-45deg) translate(8px);
+        transition: transform .5s ease-in;
+
+    }
+
+    .blue-simple-container nav.responsive-blue-simple-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .blue-simple-container .responsive-blue-simple .sub-nav-list-menu {
+        padding: 20px 10px;
+    }
+
+    .blue-simple-container .responsive-blue-simple .sub-nav-list-menu>div {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .blue-simple-container .responsive-blue-simple .sub-nav-open {
+        transform: translateX(0%);
+        transition: transform .5s ease-in;
+    }
+
+    .blue-simple-container .responsive-blue-simple .sub-nav-close {
+        transform: translateX(-140%);
+        transition: transform .5s ease-in;
+    }
+
+    .blue-simple-container .responsive-blue-simple .features-option-item {
+        flex-direction: column;
+    }
+
+    .blue-simple-container .responsive-blue-simple .sub-featur-list {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .blue-simple-container .responsive-blue-simple .sub-featur-list>div:last-child>div {
+        margin-bottom: 10px;
+    }
+
+    .responsive-blue-simple .sub-featur-list>div:last-child>div:last-child {
+        margin-bottom: 20px;
+    }
+
+    .blue-simple-container .responsive-blue-simple .sub-nav-list-menu .feature-inactive {
+        display: none;
+    }
+
+    .blue-simple-container .responsive-blue-simple .sub-nav-list-menu .feature-active {
+        display: flex;
+    }
+}

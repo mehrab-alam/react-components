@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg_gradient_hero {
+  width: 100%;
+  padding: 40px 40px 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 95vh;
+  gap: 0 20px;
+  background: #67b26f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4ca2cd, #67b26f); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4ca2cd, #67b26f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.hero_left_content,
+.hero_right_content {
+  flex: 1 1 100%;
+}
+
+.hero_left_content {
+  margin-top: -60px;
+}
+.hero_right_content img {
+  width: 100%;
+}
+
+.hero_left_content > .hero_title {
+  font-size: 5.5em;
+  line-height: 1;
+  color: #fff;
+  animation: fadein-bottom 1s ease-in-out;
+}
+
+.hero_left_content > .hero_desc {
+  margin: 20px 0 40px 0;
+  font-size: 1.6rem;
+  color: #e7e7e7;
+  animation: fadein-bottom 1.5s ease-in-out;
+}
+
+.bg_gradient_hero > .hero_left_content > .action_btns {
+  display: flex;
+  gap: 0 20px;
+  animation: fadein-bottom 2s ease-in-out;
+}
+
+.bg_gradient_hero > .hero_left_content > .action_btns > button {
+  all: unset;
+  cursor: pointer;
+}
+
+.bg_gradient_hero > .hero_left_content > .action_btns button:first-child > span {
+  background: linear-gradient(to right, #4ca2cd, #67b26f);
+  background-clip: text;
+  color: transparent;
+}
+.bg_gradient_hero > .hero_left_content > .action_btns button:first-child > img {
+  transform: translateY(2px);
+}
+
+.bg_gradient_hero > .hero_left_content > .action_btns button:first-child {
+  background: #fff;
+  border-radius: 4px;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 10px;
+}
+.bg_gradient_hero > .hero_left_content > .action_btns button:first-child:hover {
+  box-shadow: #77767656 0px 7px 29px 0px;
+}
+.bg_gradient_hero > .hero_left_content > .action_btns button:last-child {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@-webkit-keyframes fadein-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadein-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .hero_right_content {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .hero_left_content > .hero_title {
+    font-size: 4rem;
+  }
+
+  .hero_left_content > .hero_desc {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .hero_right_content {
+    display: none;
+  }
+  .hero_left_content {
+    flex-basis: 100%;
+    margin-top: 0;
+  }
+
+  .bg_gradient_hero {
+    padding: 100px 20px;
+    align-items: flex-start;
+  }
+
+  .hero_left_content > .hero_title {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .hero_left_content > .hero_desc {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .action_btns {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .bg_gradient_hero > .hero_left_content > .action_btns > button {
+    width: 200px;
+  }
+
+  .bg_gradient_hero > .hero_left_content > .action_btns button:last-child {
+    margin-top: 20px;
+    border: 2px solid #fff;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+  }
+}
