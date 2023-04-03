@@ -108,6 +108,8 @@
         width: 400px;
     }
 
+
+
     .kong-hero-container .kong-menu-container div.menu-description ul {
         margin-left: 0;
         gap: 15px;
@@ -148,6 +150,23 @@
     .kong-hero-container .kong-menu-container .products-menu-option-1 {
         background-color: #f7f9fc;
         margin-top: -14px;
+    }
+
+    .kong-hero-container .kong-menu-container .product-menu-item-content>div:first-child {
+        margin-bottom: 100px;
+        margin-top: 40px;
+    }
+
+    .kong-hero-container .kong-menu-container .product-menu-option-3 {
+        margin-top: -10px;
+    }
+
+    .kong-hero-container .kong-menu-container .product-menu-option-3>div:first-child {
+        margin-bottom: 40px;
+    }
+
+    .kong-hero-container .kong-menu-container .product-menu-option-2>div:first-child {
+        margin-bottom: 40px;
     }
 
     .kong-hero-container .responsive-ul-links .kong-sub-action-btn {

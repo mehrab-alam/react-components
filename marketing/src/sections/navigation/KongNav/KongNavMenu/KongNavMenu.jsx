@@ -18,7 +18,7 @@ const KongNavMenu = ({ isProductActive, setProductActive }) => {
 
                     <ul className="product-menu-item-1">
 
-                        <li >
+                        <li className="product-menu-item-content">
                             {productMenuContent1.map((c, i) => {
                                 return (
 
