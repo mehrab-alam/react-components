@@ -6,17 +6,19 @@
         height: 70px;
         position: relative;
         z-index: 5;
+        padding: 0px;
+
     }
 
     .miro-hero-container .miro-nav-open {
         background-color: #ffffff;
-        border-bottom: 1px solid #ffffff;
+        border-bottom: 1px solid #cfcfcf;
         transform-origin: top;
         transition: .4s all;
         position: fixed;
         left: 0;
         right: 0;
-
+        margin: 0px 10px;
     }
 
     .miro-hero-container .miro-nav-close {
@@ -40,7 +42,23 @@
     }
 
     .miro-hero-container .miro-nav-container .hamburger {
-        display: block;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .miro-hero-container .miro-nav-container .hamburger button {
+        border: 1px solid #4262ff;
+        outline: none;
+        padding: 12px;
+        font-size: 1rem;
+        border-radius: 25px;
+        background-color: #4262ff;
+        color: #ffffff;
+    }
+
+    .miro-hero-container .isHamburger-open .sub-action-btn {
+        display: none;
     }
 
     .miro-hero-container .hamburger .slice {
@@ -79,18 +97,20 @@
         display: flex;
         flex-direction: column;
         padding: 10px;
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: black;
-        gap: 20px 0;
+        gap: 10px 0;
         position: relative;
         z-index: 1;
         transition: transform .5s ease-in;
+        font-family: sans-serif;
     }
 
     .miro-hero-container .mobile-nav-links a {
         text-decoration: none;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         color: black;
+        font-weight: 400;
     }
 
     .miro-hero-container .nav-links-close {
@@ -103,7 +123,7 @@
         margin-top: 70px;
         transform: translateY(0);
         transform-origin: top;
-        background-color: #eee;
+        background-color: #ffffff;
         transition: .4s ease-in;
     }
 
@@ -126,7 +146,7 @@
     .miro-hero-container .mobile-nav-links .children-trigger-links>div:last-child {
         margin-bottom: 20px;
         font-size: 1rem;
-        color: black;
+        color: #918fa8;
         padding-bottom: 10px;
     }
 
@@ -154,22 +174,21 @@
 
     .mobile-nav-links .sub-action-link .sub-action-btn {
         outline: none;
-        border: none;
+        border: 1px solid #4262ff;
         justify-content: center;
-        padding: 10px 20px;
-        gap: 0 10px;
-        width: 250px;
+        padding: 13px;
+        gap: 0 5px;
         display: flex;
         align-items: center;
-        background-color: #291bc5;
+        background-color: #4262ff;
         border-radius: 25px;
         color: white;
-        font-size: 1.2rem;
+        font-size: 0.9rem;
         margin-bottom: 20px;
     }
 
     .mobile-nav-links .sub-action-link {
-        margin: 83px 0px;
+        margin: 50px 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -186,22 +205,30 @@
         padding-top: 20px;
     }
 
+    .mobile-nav-links .sub-action-link .sub-globe-EN div {
+        padding-top: 2px;
+    }
+
     .nav-links-open .sub-product-open {
         color: black;
     }
 
     .mobile-nav-links .sub-nav-links {
         border-bottom: 1px solid #cfcfcf;
-        margin-bottom: 10px;
-        font-weight: bold;
+        font-weight: 400;
+        font-size: 1.1rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 40px;
     }
 
+    .mobile-nav-links .sub-nav-pricing {
+        border: none;
+    }
+
     .mobile-nav-links .trigger-close {
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid #cfcfcf;
     }
 
     .miroNav-underline-border-open {

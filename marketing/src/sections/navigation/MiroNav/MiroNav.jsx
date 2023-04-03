@@ -53,7 +53,9 @@ const MiroNav = () => {
                         <a>Contact Sales</a>
                         <a href="">Login</a>
                         <a href="" className="signUp">Sign up free <span>&rarr;</span></a>
+
                     </div>
+
                     <div className={`hamburger ${isHamburger ? "isHamburger-open " : "isHamburger-close"} `} onClick={() => {
                         if (isHamburger) {
                             setSubNavExpanded(false)
@@ -61,9 +63,13 @@ const MiroNav = () => {
                         setHamburger(!isHamburger)
                     }
                     }>
-                        <div className="slice slice-1"></div>
-                        <div className="slice slice-2"></div>
-                        <div className="slice slice-3"></div>
+                        <button className="sub-action-btn">Sign up free <span>&rarr;</span></button>
+
+                        <div>
+                            <div className="slice slice-1"></div>
+                            <div className="slice slice-2"></div>
+                            <div className="slice slice-3"></div>
+                        </div>
                     </div>
                 </nav>
 
@@ -97,11 +103,11 @@ const MiroNav = () => {
                 <a href="" className={`sub-nav-links `}>Solutions
 
                 </a>
-                <a href="" className={`sub-nav-links `}>pricing
+                <a href="" className={`sub-nav-pricing sub-nav-links`}>pricing
 
                 </a>
                 <div className="sub-action-link">
-                    <button className="sub-action-btn">Sign up free <span> &rarr;</span></button>
+                    <button className="sub-action-btn">Sign up free <span>&rarr;</span></button>
                     <div>
                         <a href="">Login</a>
                         <a href="">Contact Sales</a>
