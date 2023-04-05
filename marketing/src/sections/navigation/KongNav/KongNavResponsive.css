@@ -5,6 +5,10 @@
         font-family: sans-serif;
     }
 
+    .kong-hero-container .kong-menu-container {
+        position: absolute;
+        top: 50px;
+    }
 
     .kong-hero-container .kongnav-container {
         display: none;

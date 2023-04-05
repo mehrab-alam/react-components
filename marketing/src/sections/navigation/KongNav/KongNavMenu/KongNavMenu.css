@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0px;
     background-color: #f7f9fc;
-    top: 52px;
+    top: 66px;
     border: 1px solid #eee;
     font-family: sans-serif;
 }
@@ -36,6 +36,7 @@
 .kong-menu-container .product-menu-option-3 {
     margin-top: 40px;
 }
+
 
 .kong-menu-container .products-menu-option ul {
     margin: 40px 0px;
