@@ -9,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    background-color: #fff;
+    background-color: #ffffff;
     height: 65px;
     font-family: sans-serif;
     box-shadow: 0 1px 0 #dae3f2;
@@ -20,7 +20,7 @@
     position: fixed;
     left: 0;
     right: 0;
-    top: 0;
+    top: -2px;
     align-self: center;
     height: 65px;
     box-shadow: 0 1px 0 #dae3f2;
@@ -150,7 +150,7 @@
 .kong-hero-container .kongnav-container .kongnav .kongnav-menu-item-2 {
     color: #062f4d;
     font-weight: 400;
-    width: 80px;
+    /* width: 80px; */
 }
 
 .kong-hero-container .kongnav-container .kongnav .kongnav-menu-item-2:hover {
